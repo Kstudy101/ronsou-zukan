@@ -1,0 +1,215 @@
+{
+  "id": "ep08_ranuki",
+  "series": "ニッポン論争図鑑",
+  "episode": 8,
+  "topic_ja": "ら抜き言葉論争",
+  "source": "文化庁 平成27年度「国語に関する世論調査」(平成28年9月21日発表、平成28年2〜3月実施、全国16歳以上の男女、個別面接、有効回収1,959人)",
+  "expected_comments": [
+    "見れたは普通に使う",
+    "考えれないは流石に無理",
+    "国語の先生に怒られたわ"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    { "surface": "来られます", "pronunciation": "コラレマス", "accent_type": 3 },
+    { "surface": "見れた", "pronunciation": "ミレタ", "accent_type": 0 },
+    { "surface": "見られた", "pronunciation": "ミラレタ", "accent_type": 0 },
+    { "surface": "考えれない", "pronunciation": "カンガエレナイ", "accent_type": 5 },
+    { "surface": "考えられない", "pronunciation": "カンガエラレナイ", "accent_type": 6 },
+    { "surface": "文化庁", "pronunciation": "ブンカチョウ", "accent_type": 3 },
+    { "surface": "規則", "pronunciation": "キソク", "accent_type": 1 },
+    { "surface": "ら抜き", "pronunciation": "ラヌキ", "accent_type": 0 }
+  ],
+  "youtube": {
+    "title": "【文化庁調査】「見れた」48.4％が「見られた」44.6％を初めて追い抜いた",
+    "description": "「ら抜き言葉は誤り」と習った人は多いはずです。\nところが文化庁の「国語に関する世論調査」平成27年度で、「今年は初日の出が見れた」を使う人が48.4％、「見られた」が44.6％。調査開始以来はじめて、ら抜きのほうが上回りました。\n\n年代で見ると16〜19歳は76.2％が「見れた」。70歳以上は30.6％。世代でほぼ真逆です。\n「早く出れる？」も45.1％対44.3％で逆転しました。\n\nただし同じ「ら抜き」でも「考えれない」は7.8％しかいません（「考えられない」は88.6％）。規則は同じなのに、言葉ごとに結果がまったく違う。だから決着がつきません。\n\n出典：文化庁「平成27年度 国語に関する世論調査」（平成28年9月21日発表／調査時期 平成28年2〜3月／全国16歳以上の男女／個別面接調査／有効回収数1,959人・回収率54.6％）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#ら抜き言葉 #日本語 #文化庁 #国語 #言葉 #雑学 #論争図鑑",
+    "tags": [
+      "ら抜き言葉",
+      "日本語",
+      "国語に関する世論調査",
+      "文化庁",
+      "見れる",
+      "見られる",
+      "言葉の乱れ",
+      "世代差",
+      "雑学",
+      "論争"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "documentary",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "ら抜きが逆転",
+    "sub": "文化庁 国語に関する世論調査 平成27年度 n=1,959",
+    "a_label": "見れた",
+    "a_value": 48.4,
+    "b_label": "見られた",
+    "b_value": 44.6
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "初日の出が「見れた」？「見られた」？",
+      "visual": { "type": "choice", "a_label": "見れた", "b_label": "見られた" },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "ら抜き言葉は誤り。そう習ったのだ",
+      "visual": { "type": "choice", "a_label": "見れた", "b_label": "見られた", "center": "VS" },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "でも「見れた」を使う人が48.4％",
+      "visual": {
+        "type": "number", "value": "48.4", "unit": "%",
+        "label": "「見れた」を普通使う 全体",
+        "side": "a",
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "「見られた」は44.6％なのだ",
+      "visual": {
+        "type": "number", "value": "44.6", "unit": "%",
+        "label": "「見られた」を普通使う 全体",
+        "side": "b",
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s05",
+      "ja": "調査開始以来、初めて追い抜いた",
+      "tsukkomi": "逆転してる",
+      "visual": {
+        "type": "versus",
+        "a_label": "見れた", "a_value": 48.4,
+        "b_label": "見られた", "b_value": 44.6,
+        "unit": "%", "decimals": 1,
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s06",
+      "ja": "16から19歳では、76.2％が使う",
+      "visual": {
+        "type": "number", "value": "76.2", "unit": "%",
+        "label": "「見れた」16〜19歳",
+        "side": "a",
+        "source": "文化庁 平成27年度 国語に関する世論調査 年齢別"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "70歳以上では30.6％。真逆なのだ",
+      "tsukkomi": "世代で割れてる",
+      "visual": {
+        "type": "number", "value": "30.6", "unit": "%",
+        "label": "「見れた」70歳以上",
+        "side": "b",
+        "source": "文化庁 平成27年度 国語に関する世論調査 年齢別"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s08",
+      "ja": "「来られますか」も、ずっと減っている",
+      "visual": {
+        "type": "trend",
+        "points": [
+          { "label": "H7", "value": 58.8 },
+          { "label": "H12", "value": 54.2 },
+          { "label": "H17", "value": 52.7 },
+          { "label": "H22", "value": 47.9 },
+          { "label": "H27", "value": 45.4 }
+        ],
+        "unit": "%",
+        "baseline": 50,
+        "baseline_label": "50%",
+        "source": "文化庁 国語に関する世論調査「朝5時に来られますか」を使う"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s09",
+      "ja": "じゃあ全部、ら抜きになるのか",
+      "visual": { "type": "choice", "a_label": "なる", "b_label": "ならない", "center": "?" },
+      "hold": 0.4
+    },
+    {
+      "id": "s10",
+      "ja": "「考えれない」は7.8％しかいない",
+      "tsukkomi": "それは無理",
+      "visual": {
+        "type": "number", "value": "7.8", "unit": "%",
+        "label": "「考えれない」を普通使う 全体",
+        "side": "a",
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "「考えられない」が88.6％なのだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "考えられない", "a_value": 88.6,
+        "b_label": "考えれない", "b_value": 7.8,
+        "unit": "%", "decimals": 1,
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s12",
+      "ja": "同じ規則なのに、言葉ごとに違うのだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "考えられない", "a_value": 88.6,
+        "b_label": "考えれない", "b_value": 7.8,
+        "unit": "%", "decimals": 1,
+        "source": "文化庁 平成27年度 国語に関する世論調査 n=1,959"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち？教えてほしいのだ",
+      "visual": { "type": "cta", "a_label": "見れた派", "b_label": "見られた派" },
+      "hold": 1.0
+    }
+  ]
+}
