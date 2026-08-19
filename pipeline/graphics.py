@@ -214,8 +214,9 @@ def trend(design: dict, spec: dict) -> Image.Image:
         by = bottom - (base - low) / (high - low) * (bottom - top)
         for x in range(left, right, 26):
             draw.line([(x, by), (x + 13, by)], fill=DIM, width=3)
-        draw.text((right + 8, by), spec.get("baseline_label", ""), font=font["tiny"],
-                  fill=DIM, anchor="lm")
+        # 오른쪽에 두면 마지막 점의 값과 겹친다. 왼쪽 여백에 세운다.
+        draw.text((left - 12, by), spec.get("baseline_label", ""), font=font["tiny"],
+                  fill=DIM, anchor="rm")
 
     coords = [xy(i, v) for i, v in enumerate(values)]
     canvas = Image.alpha_composite(
