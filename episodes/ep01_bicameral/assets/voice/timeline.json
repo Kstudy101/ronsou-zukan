@@ -1,0 +1,107 @@
+{
+  "voice": {
+    "provider": "typecast",
+    "voice_id": "tc_663c68c34652f4195ddea850",
+    "model": "ssfm-v30",
+    "tempo": 1.0
+  },
+  "total": 50.0,
+  "scenes": [
+    {
+      "id": "s01",
+      "audio": "s01.wav",
+      "start": 0.0,
+      "speech": 2.6,
+      "hold": 0.25,
+      "duration": 2.85
+    },
+    {
+      "id": "s02",
+      "audio": "s02.wav",
+      "start": 2.85,
+      "speech": 2.25,
+      "hold": 0.4,
+      "duration": 2.65
+    },
+    {
+      "id": "s03",
+      "audio": "s03.wav",
+      "start": 5.5,
+      "speech": 3.8,
+      "hold": 0.25,
+      "duration": 4.05
+    },
+    {
+      "id": "s04",
+      "audio": "s04.wav",
+      "start": 9.55,
+      "speech": 4.3,
+      "hold": 0.25,
+      "duration": 4.55
+    },
+    {
+      "id": "s05",
+      "audio": "s05.wav",
+      "start": 14.1,
+      "speech": 4.25,
+      "hold": 0.25,
+      "duration": 4.5
+    },
+    {
+      "id": "s06",
+      "audio": "s06.wav",
+      "start": 18.6,
+      "speech": 3.5,
+      "hold": 0.35,
+      "duration": 3.85
+    },
+    {
+      "id": "s07",
+      "audio": "s07.wav",
+      "start": 22.45,
+      "speech": 4.3,
+      "hold": 0.25,
+      "duration": 4.55
+    },
+    {
+      "id": "s08",
+      "audio": "s08.wav",
+      "start": 27.0,
+      "speech": 4.2,
+      "hold": 0.35,
+      "duration": 4.55
+    },
+    {
+      "id": "s09",
+      "audio": "s09.wav",
+      "start": 31.55,
+      "speech": 4.2,
+      "hold": 0.3,
+      "duration": 4.5
+    },
+    {
+      "id": "s10",
+      "audio": "s10.wav",
+      "start": 36.05,
+      "speech": 4.7,
+      "hold": 0.25,
+      "duration": 4.95
+    },
+    {
+      "id": "s11",
+      "audio": "s11.wav",
+      "start": 41.0,
+      "speech": 4.35,
+      "hold": 0.35,
+      "duration": 4.7
+    },
+    {
+      "id": "s12",
+      "audio": "s12.wav",
+      "start": 45.7,
+      "speech": 3.5,
+      "hold": 0.8,
+      "duration": 4.3
+    }
+  ]
+}

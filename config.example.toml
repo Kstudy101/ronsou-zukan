@@ -1,0 +1,14 @@
+# hanil/config.toml 로 복사한 뒤 키를 채운다. config.toml 은 커밋 대상이 아니다.
+
+[typecast]
+# https://typecast.ai → 로그인 → API 키 발급
+api_key = ""
+# 사용할 화자. 목록에 언어 정보가 없어 자동 선택은 하지 않는다 —
+# pipeline/voice_audition.py 로 후보를 듣고 골라서 채운다.
+voice_id = ""
+model = "ssfm-v30"
+
+[youtube]
+# Google Cloud Console → OAuth 2.0 클라이언트 ID(데스크톱 앱) json 경로
+client_secrets = ""
+token_file = "youtube_token.json"

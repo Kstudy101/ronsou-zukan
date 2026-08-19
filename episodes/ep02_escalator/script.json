@@ -1,0 +1,238 @@
+{
+  "id": "ep02_escalator",
+  "series": "ニッポン論争図鑑",
+  "episode": 2,
+  "topic_ja": "エスカレーター論争",
+  "source": "NEXER／日本トレンドリサーチ 2021/9/30-10/1 (n=1,400)・名古屋市大曽根駅 実測",
+  "expected_comments": [
+    "大阪は逆やで",
+    "急いでる人はどうすんの",
+    "名古屋の条例のやり方が正しい"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "片側空け",
+      "pronunciation": "カタガワアケ",
+      "accent_type": 4
+    },
+    {
+      "surface": "大曽根",
+      "pronunciation": "オオゾネ",
+      "accent_type": 0
+    }
+  ],
+  "youtube": {
+    "title": "【実測】エスカレーター条例、文言を変えたら歩く人が減った",
+    "description": "エスカレーターの片側空け。埼玉県と名古屋市、どちらも歩行を禁止する条例を作りました。\n違ったのは呼びかけの文言です。埼玉は「立ち止まろう」、名古屋は「左右両方に立とう」。\n名古屋市大曽根駅の実測では、歩く人が17.3％→13.7％→10.5％まで下がりました。\n\n出典：NEXER／日本トレンドリサーチ（2021年9月30日〜10月1日、n=1,400）／名古屋市エスカレーター条例（2023年10月施行）／東海テレビ 大曽根駅実測報道\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#エスカレーター #片側空け #どっち派 #雑学 #論争図鑑",
+    "tags": [
+      "エスカレーター",
+      "片側空け",
+      "条例",
+      "名古屋",
+      "埼玉",
+      "マナー",
+      "雑学",
+      "豆知識",
+      "論争",
+      "日本"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "mode": "delta",
+    "headline": "文言を変えただけ",
+    "sub": "名古屋市 大曽根駅 実測",
+    "before_label": "条例前",
+    "before": "17.3%",
+    "after_label": "1年後",
+    "after": "10.5%"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "エスカレーター、片側空ける？",
+      "visual": {
+        "type": "choice",
+        "a_label": "空ける",
+        "b_label": "空けない"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "実は世論もほぼ半々なのだ",
+      "tsukkomi": "また半々",
+      "visual": {
+        "type": "versus",
+        "a_label": "禁止してほしい",
+        "a_value": 50.5,
+        "b_label": "思わない",
+        "b_value": 49.5,
+        "source": "NEXER／日本トレンドリサーチ 2021年10月 n=1,400",
+        "unit": "%",
+        "decimals": 1
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s03",
+      "ja": "でも本題はここからなのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "埼玉県",
+        "b_label": "名古屋市",
+        "center": "vs"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s04",
+      "ja": "両方とも歩行を禁止する条例を作った",
+      "visual": {
+        "type": "choice",
+        "a_label": "埼玉県",
+        "b_label": "名古屋市",
+        "center": "vs"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s05",
+      "ja": "なのに、結果が分かれたのだ",
+      "tsukkomi": "なんで",
+      "visual": {
+        "type": "choice",
+        "a_label": "埼玉県",
+        "b_label": "名古屋市",
+        "center": "≠"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s06",
+      "ja": "違ったのは文言だけなのだ",
+      "visual": {
+        "type": "number",
+        "value": "1",
+        "unit": "つだけ",
+        "label": "違い",
+        "side": "a",
+        "source": "名古屋市・埼玉県 各条例の広報文言"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "埼玉は「立ち止まろう」と言った",
+      "visual": {
+        "type": "choice",
+        "a_label": "埼玉県",
+        "b_label": "名古屋市",
+        "center": "?"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s08",
+      "ja": "名古屋は「左右両方に立とう」と言った",
+      "tsukkomi": "ほぼ同じでは",
+      "visual": {
+        "type": "choice",
+        "a_label": "立ち止まろう",
+        "b_label": "両方に立とう",
+        "center": "vs"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s09",
+      "ja": "大曽根駅で歩く人を数えたのだ",
+      "visual": {
+        "type": "number",
+        "value": "17.3",
+        "unit": "%",
+        "label": "条例前 2023年8月",
+        "side": "b",
+        "source": "東海テレビ 名古屋市大曽根駅 実測"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s10",
+      "ja": "条例のあと、13.7％",
+      "visual": {
+        "type": "number",
+        "value": "13.7",
+        "unit": "%",
+        "label": "施行直後",
+        "side": "b",
+        "source": "東海テレビ 名古屋市大曽根駅 実測"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s11",
+      "ja": "1年後には10.5％まで下がった",
+      "tsukkomi": "ちゃんと効いてる",
+      "visual": {
+        "type": "number",
+        "value": "10.5",
+        "unit": "%",
+        "label": "1年後 2024年9月",
+        "side": "b",
+        "source": "東海テレビ 名古屋市大曽根駅 実測"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s12",
+      "ja": "「やめろ」より「こうしろ」が効いたのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "立ち止まろう",
+        "b_label": "両方に立とう",
+        "center": "→"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたの街はどっち？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "空ける派",
+        "b_label": "空けない派"
+      },
+      "hold": 1.0
+    }
+  ]
+}

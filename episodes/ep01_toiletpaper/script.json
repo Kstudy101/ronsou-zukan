@@ -1,0 +1,255 @@
+{
+  "id": "ep01_toiletpaper",
+  "series": "ニッポン論争図鑑",
+  "episode": 1,
+  "topic_ja": "トイレットペーパー論争",
+  "source": "Jタウン研究所 全国投票 2020/10/14-2021/2/22 (n=2,929)",
+  "expected_comments": [
+    "実家はシングルだったけど今はダブル",
+    "関西だけどうちはダブルだが？",
+    "栃木県民です。ダブル一択"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "真っ二つ",
+      "pronunciation": "マップタツ",
+      "accent_type": 4
+    },
+    {
+      "surface": "栃木",
+      "pronunciation": "トチギ",
+      "accent_type": 0
+    },
+    {
+      "surface": "茨城",
+      "pronunciation": "イバラキ",
+      "accent_type": 0
+    }
+  ],
+  "youtube": {
+    "title": "【1票差】トイレットペーパー論争、日本は本当に真っ二つだった",
+    "description": "シングル1,465票 対 ダブル1,464票。全国投票の結果は、たった1票差でした。\n都道府県で見ると、シングル優勢22県・ダブル優勢23県・同数2県。きれいに割れています。\nあなたはどっち派ですか。コメントで教えてください。\n\n出典：Jタウン研究所 全国投票（2020年10月14日〜2021年2月22日、有効投票2,929票）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#トイレットペーパー #どっち派 #雑学 #日本 #論争図鑑",
+    "tags": [
+      "トイレットペーパー",
+      "シングル",
+      "ダブル",
+      "どっち派",
+      "雑学",
+      "豆知識",
+      "都道府県",
+      "アンケート",
+      "論争",
+      "日本"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4,
+    "bgm_style": "bright"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "シングル派？ダブル派？",
+      "visual": {
+        "type": "choice",
+        "a_label": "シングル",
+        "b_label": "ダブル"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "全国投票が、とんでもないことに",
+      "tsukkomi": "え、なに",
+      "visual": {
+        "type": "choice",
+        "a_label": "シングル",
+        "b_label": "ダブル",
+        "center": "…"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "シングル、1465票",
+      "visual": {
+        "type": "number",
+        "value": "1,465",
+        "unit": "票",
+        "label": "シングル",
+        "side": "a",
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "ダブル、1464票",
+      "visual": {
+        "type": "number",
+        "value": "1,464",
+        "unit": "票",
+        "label": "ダブル",
+        "side": "b",
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s05",
+      "ja": "1票差なのだ",
+      "tsukkomi": "ほぼ引き分け",
+      "visual": {
+        "type": "versus",
+        "a_label": "シングル",
+        "a_value": 1465,
+        "b_label": "ダブル",
+        "b_value": 1464,
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.6
+    },
+    {
+      "id": "s06",
+      "ja": "都道府県で見ると、もっと割れるのだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "シングル",
+        "a_value": 1465,
+        "b_label": "ダブル",
+        "b_value": 1464,
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s07",
+      "ja": "関西はシングルが59パーセント",
+      "tsukkomi": "節約文化なのだ",
+      "visual": {
+        "type": "number",
+        "value": "59",
+        "unit": "%",
+        "label": "関西 シングル",
+        "side": "a",
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s08",
+      "ja": "栃木はダブルが86％で全国トップ",
+      "visual": {
+        "type": "number",
+        "value": "86",
+        "unit": "%",
+        "label": "栃木 ダブル",
+        "side": "b",
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s09",
+      "ja": "茨城81、福島80。北関東が固いのだ",
+      "tsukkomi": "なぜ",
+      "visual": {
+        "type": "number",
+        "value": "81/80",
+        "unit": "%",
+        "label": "茨城・福島 ダブル",
+        "side": "b",
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s10",
+      "ja": "シングル22県、ダブル23県",
+      "visual": {
+        "type": "split",
+        "a_label": "シングル優勢",
+        "a_value": 22,
+        "b_label": "ダブル優勢",
+        "b_value": 23,
+        "tie_label": "同数",
+        "tie_value": 2,
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s11",
+      "ja": "残り2県は、まさかの同数なのだ",
+      "tsukkomi": "できすぎ",
+      "visual": {
+        "type": "split",
+        "a_label": "シングル優勢",
+        "a_value": 22,
+        "b_label": "ダブル優勢",
+        "b_value": 23,
+        "tie_label": "同数",
+        "tie_value": 2,
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s12",
+      "ja": "日本は、きれいに真っ二つなのだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "シングル",
+        "a_value": 1465,
+        "b_label": "ダブル",
+        "b_value": 1464,
+        "source": "Jタウン研究所 全国投票 2020/10-2021/2 n=2,929"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち派？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "シングル派",
+        "b_label": "ダブル派"
+      },
+      "hold": 1.0
+    }
+  ],
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "たった1票差",
+    "sub": "トイレットペーパー全国投票",
+    "a_label": "シングル",
+    "a_value": 1465,
+    "b_label": "ダブル",
+    "b_value": 1464
+  }
+}

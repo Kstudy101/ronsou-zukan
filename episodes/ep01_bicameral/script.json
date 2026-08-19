@@ -1,0 +1,231 @@
+{
+  "id": "ep01_bicameral",
+  "series": "한일 법제 비교",
+  "episode": 1,
+  "source_doc": "ilbon-panrye-moeum/한국비교/양원제와 단원제.md",
+  "topic_ko": "양원제와 단원제",
+  "topic_ja": "二院制と一院制",
+  "voice": {
+    "provider": "typecast",
+    "fallback": "edge",
+    "edge_voice": "ko-KR-InJoonNeural",
+    "typecast_voice_name": "Geunseok",
+    "typecast_actor_id": "",
+    "rate": 1.0,
+    "edge_rate": "+12%",
+    "typecast_tempo": 1.0
+  },
+  "youtube": {
+    "title": "대한민국 국회가 '둘'이었던 1년 | 한국은 지웠고, 일본은 남겼다",
+    "description": "한국 국회에도 '참의원'이 있었습니다. 헌법에 규정된 건 1952년, 실제로 문을 연 건 1960년, 그리고 이듬해 끝났습니다.\n같은 시기 일본은 메이지 헌법의 귀족원을 '국민이 뽑는 참의원'으로 바꿔 지금까지 유지하고 있습니다.\n같은 제도를 두고 한 나라는 지웠고, 한 나라는 남겼습니다.\n\n#한일비교 #헌법 #양원제 #참의원 #행정서사",
+    "tags": [
+      "한일비교",
+      "헌법",
+      "양원제",
+      "단원제",
+      "참의원",
+      "민의원",
+      "제2공화국",
+      "일본헌법",
+      "행정서사",
+      "行政書士",
+      "법률상식",
+      "역사"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_center_y_pct": 62.0,
+    "ko_font": "C:/Windows/Fonts/NotoSansKR-VF.ttf",
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ko_size": 62,
+    "ja_size": 42,
+    "ko_color": "#FFFFFF",
+    "ja_color": "#9FD2FF",
+    "bgm_gain_db": -19.0,
+    "transition": 0.5
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ko": "한국 국회에도 '참의원'이 있었습니다.",
+      "ja": "韓国の国会にも「参議院」がありました。",
+      "queries": [
+        "National Assembly Proceeding Hall Seoul"
+      ],
+      "hold": 0.25,
+      "files": [
+        "Korea-Seoul-Yeouido-National Assembly Building-01.jpg",
+        "Korea-Seoul-Yeouido-National Assembly Building-05.jpg"
+      ],
+      "pick_title": "Korea-Seoul-Yeouido-National Assembly Building-05.jpg"
+    },
+    {
+      "id": "s02",
+      "ko": "딱 1년 만에 사라졌습니다.",
+      "ja": "たった1年で消えました。",
+      "queries": [
+        "National Assembly plenary chamber Korea",
+        "국회 본회의장"
+      ],
+      "hold": 0.4,
+      "files": [
+        "구 국회휘장.jpg",
+        "Korea-Seoul-Yeouido-National Assembly Building-02.jpg"
+      ],
+      "pick_title": "구 국회휘장.jpg"
+    },
+    {
+      "id": "s03",
+      "ko": "1948년 제헌헌법, 국회는 단원제였습니다.",
+      "ja": "1948年の制憲憲法。国会は一院制でした。",
+      "queries": [
+        "Constitutional Assembly Korea 1948"
+      ],
+      "hold": 0.25,
+      "files": [
+        "First Constitution Makers of Korea.png",
+        "대한민국 헌법 공포 사진.jpg"
+      ],
+      "pick_title": "First Constitution Makers of Korea.png"
+    },
+    {
+      "id": "s04",
+      "ko": "그런데 1952년, 전시의 부산에서 헌법이 바뀝니다.",
+      "ja": "ところが1952年、戦時下の釜山で憲法が変わります。",
+      "queries": [
+        "Busan 1952 Korean War",
+        "Pusan Korea 1952 refugees"
+      ],
+      "hold": 0.25,
+      "files": [
+        "Fuel at Pusan.jpg"
+      ],
+      "pick_title": "Fuel at Pusan.jpg"
+    },
+    {
+      "id": "s05",
+      "ko": "발췌개헌. 국회를 민의원과 참의원으로 나눴습니다.",
+      "ja": "抜萃改憲。国会を民議院と参議院に分けました。",
+      "queries": [
+        "Syngman Rhee National Assembly 1952"
+      ],
+      "hold": 0.25,
+      "files": [
+        "SKAssemblyAmendmentVote.jpg"
+      ],
+      "pick_title": "SKAssemblyAmendmentVote.jpg"
+    },
+    {
+      "id": "s06",
+      "ko": "그런데 참의원 선거는 끝내 없었습니다. 헌법에만 있는 국회였죠.",
+      "ja": "しかし参議院選挙はついに行われず。憲法の中だけの議院でした。",
+      "queries": [
+        "National Assembly Proceeding Hall",
+        "Korean National Assembly 1950s"
+      ],
+      "hold": 0.35,
+      "files": [
+        "1948SKelection.jpg",
+        "Kankoku-Tokuhon-1.jpg"
+      ],
+      "pick_title": "1948SKelection.jpg"
+    },
+    {
+      "id": "s07",
+      "ko": "참의원이 열린 건 1960년, 4·19 뒤 제2공화국입니다.",
+      "ja": "参議院が開いたのは1960年、四・一九後の第二共和国。",
+      "queries": [
+        "Chang Myon",
+        "Second Republic of Korea 1960"
+      ],
+      "hold": 0.25,
+      "files": [
+        "Chunichi1960-04-20-1.jpg",
+        "Chunichi1960-04-21-2.jpg"
+      ],
+      "pick_title": "Chunichi1960-04-21-2.jpg"
+    },
+    {
+      "id": "s08",
+      "ko": "이듬해 5·16. 1962년, 국회는 다시 하나가 됩니다.",
+      "ja": "翌年の五・一六。1962年、国会は再び一つに。",
+      "queries": [],
+      "hold": 0.35,
+      "files": [
+        "5.16 Coup Park Chung-hee.jpg",
+        "HQ Supreme-Council-for-National-Reconstruction 국가재건최고회의 1962.jpg",
+        "Marines-march-on-Government-Building-Seoul 1962-05-17.jpg"
+      ],
+      "pick_title": "5.16 Coup Park Chung-hee.jpg"
+    },
+    {
+      "id": "s09",
+      "ko": "현행 헌법 제41조. 지금도 국회는 단원제입니다.",
+      "ja": "現行憲法第41条。今も国会は一院制です。",
+      "queries": [
+        "National Assembly Republic of Korea building"
+      ],
+      "hold": 0.3,
+      "files": [
+        "Korea-Seoul-Yeouido-National Assembly Building-04.jpg",
+        "Fountain in National Assembly Building of South Korea.jpg"
+      ],
+      "pick_title": "Korea-Seoul-Yeouido-National Assembly Building-04.jpg"
+    },
+    {
+      "id": "s10",
+      "ko": "일본은 헌법 제42조. 중의원과 참의원, 지금도 양원제입니다.",
+      "ja": "日本は憲法第42条。衆議院と参議院、今も二院制。",
+      "queries": [],
+      "hold": 0.25,
+      "files": [
+        "The House of Councillors, the upper house of the Diet 参議院本会議場 - panoramio.jpg",
+        "20260220shu san honkaigi5.jpg"
+      ],
+      "pick_title": "The House of Councillors, the upper house of the Diet 参議院本会議場 - panoramio.jpg"
+    },
+    {
+      "id": "s11",
+      "ko": "메이지 헌법의 귀족원이, 국민이 뽑는 참의원으로 바뀐 겁니다.",
+      "ja": "明治憲法の貴族院が、国民が選ぶ参議院に変わったのです。",
+      "queries": [],
+      "hold": 0.35,
+      "files": [
+        "帝国議会貴族院之図-Illustration of The Imperial Assembly of the House of Peers (Teikoku gikai kizokuin no zu) MET DP147741.jpg",
+        "Japanese House of Peers color.jpg カラー waifu2x photo no 高画質ise3 scale tta 1.png",
+        "230 12 la chambre des pairs du Japon présidée par Tokugawa prince.jpg"
+      ],
+      "pick_title": "帝国議会貴族院之図-Illustration of The Imperial Assembly of the House of Peers (Teikoku gikai kizokuin no zu) MET DP147741.jpg"
+    },
+    {
+      "id": "s12",
+      "ko": "같은 제도를 두고 한 나라는 지웠고, 한 나라는 남겼습니다.",
+      "ja": "同じ制度をめぐり、一方は消し、一方は残しました。",
+      "queries": [
+        "National Diet Building Tokyo exterior"
+      ],
+      "hold": 0.8,
+      "files": [
+        "ณ รัฐสภาญี่ปุ่น 6พฤศจิกายน2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์) - Flickr - Abhisit Vejjajiva.jpg",
+        "国会議事堂ー２.JPG"
+      ],
+      "pick_title": "ณ รัฐสภาญี่ปุ่น 6พฤศจิกายน2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์) - Flickr - Abhisit Vejjajiva.jpg"
+    }
+  ],
+  "thumbnail": {
+    "image_title": "구 국회휘장.jpg",
+    "backdrop_title": "Korea-Seoul-Yeouido-National Assembly Building-05.jpg",
+    "headline": [
+      "국회가",
+      "둘이었던",
+      "1년"
+    ],
+    "sub": "한국은 지웠고, 일본은 남겼다"
+  }
+}

@@ -1,0 +1,14 @@
+# 이미지 출처 (모두 퍼블릭 도메인 또는 CC 라이선스)
+
+- s01: File:Korea-Seoul-Yeouido-National Assembly Building-05.jpg — Alain Seguin at Flickr, from Ottawa, Canada / CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Korea-Seoul-Yeouido-National_Assembly_Building-05.jpg
+- s02: File:구 국회휘장.jpg — AndyKim-2008 / CC BY-SA 4.0 — https://commons.wikimedia.org/wiki/File:%EA%B5%AC_%EA%B5%AD%ED%9A%8C%ED%9C%98%EC%9E%A5.jpg
+- s03: File:First Constitution Makers of Korea.png — Korea Government / Public domain — https://commons.wikimedia.org/wiki/File:First_Constitution_Makers_of_Korea.png
+- s04: File:Fuel at Pusan.jpg — US Army / Public domain — https://commons.wikimedia.org/wiki/File:Fuel_at_Pusan.jpg
+- s05: File:SKAssemblyAmendmentVote.jpg — 공보처 홍보국 사진담당관 / Public domain — https://commons.wikimedia.org/wiki/File:SKAssemblyAmendmentVote.jpg
+- s06: File:1948SKelection.jpg — US Military Government in Korea (USAMGIK) / Public domain — https://commons.wikimedia.org/wiki/File:1948SKelection.jpg
+- s07: File:Chunichi1960-04-21-2.jpg — Unknown photographer / Public domain — https://commons.wikimedia.org/wiki/File:Chunichi1960-04-21-2.jpg
+- s08: File:5.16 Coup Park Chung-hee.jpg — Unknown authorUnknown author / Public domain — https://commons.wikimedia.org/wiki/File:5.16_Coup_Park_Chung-hee.jpg
+- s09: File:Korea-Seoul-Yeouido-National Assembly Building-04.jpg — Alain Seguin at Flickr, from Ottawa, Canada / CC BY-SA 3.0 — https://commons.wikimedia.org/wiki/File:Korea-Seoul-Yeouido-National_Assembly_Building-04.jpg
+- s10: File:The House of Councillors, the upper house of the Diet 参議院本会議場 - panoramio.jpg — AMANO Jun-ichi / CC BY 3.0 — https://commons.wikimedia.org/wiki/File:The_House_of_Councillors,_the_upper_house_of_the_Diet_%E5%8F%82%E8%AD%B0%E9%99%A2%E6%9C%AC%E4%BC%9A%E8%AD%B0%E5%A0%B4_-_panoramio.jpg
+- s11: File:帝国議会貴族院之図-Illustration of The Imperial Assembly of the House of Peers (Teikoku gikai kizokuin no zu) MET DP147741.jpg — Toyohara Chikanobu / CC0 — https://commons.wikimedia.org/wiki/File:%E5%B8%9D%E5%9B%BD%E8%AD%B0%E4%BC%9A%E8%B2%B4%E6%97%8F%E9%99%A2%E4%B9%8B%E5%9B%B3-Illustration_of_The_Imperial_Assembly_of_the_House_of_Peers_(Teikoku_gikai_kizokuin_no_zu)_MET_DP147741.jpg
+- s12: File:ณ รัฐสภาญี่ปุ่น 6พฤศจิกายน2552 (The Official Site of The Prime Minister of Thailand Photo by พีรพัฒน์ วิมลรังครัตน์) - Flickr - Abhisit Vejjajiva.jpg — Government of Thailand / CC BY 2.0 — https://commons.wikimedia.org/wiki/File:%E0%B8%93_%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%AA%E0%B8%A0%E0%B8%B2%E0%B8%8D%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%B8%E0%B9%88%E0%B8%99_6%E0%B8%9E%E0%B8%A4%E0%B8%A8%E0%B8%88%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A2%E0%B8%992552_(The_Official_Site_of_The_Prime_Minister_of_Thailand_Photo_by_%E0%B8%9E%E0%B8%B5%E0%B8%A3%E0%B8%9E%E0%B8%B1%E0%B8%92%E0%B8%99%E0%B9%8C_%E0%B8%A7%E0%B8%B4%E0%B8%A1%E0%B8%A5%E0%B8%A3%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%95%E0%B8%99%E0%B9%8C)_-_Flickr_-_Abhisit_Vejjajiva.jpg

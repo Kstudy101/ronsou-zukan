@@ -1,0 +1,289 @@
+{
+  "id": "ep03_seniority",
+  "series": "ニッポン論争図鑑",
+  "episode": 3,
+  "topic_ja": "年功序列 vs 成果主義",
+  "source": "産業能率大学 第36回 2025年度新入社員の会社生活調査 (n=369)",
+  "expected_comments": [
+    "そりゃ今の成果主義は評価が雑だもん",
+    "氷河期世代から見たら羨ましい",
+    "うちの若手もまさにこれ"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "年功序列",
+      "pronunciation": "ネンコウジョレツ",
+      "accent_type": 5
+    },
+    {
+      "surface": "成果主義",
+      "pronunciation": "セイカシュギ",
+      "accent_type": 4
+    },
+    {
+      "surface": "終身雇用",
+      "pronunciation": "シュウシンコヨウ",
+      "accent_type": 5
+    }
+  ],
+  "youtube": {
+    "title": "【36年で初】新入社員が「年功序列がいい」と答えた",
+    "description": "1990年から続く調査で、成果主義がずっと多数派でした。それが2025年、初めてひっくり返りました。\n年功序列 56.3％ 対 成果主義 43.6％。しかも2022年の38.9％から3年で急上昇しています。\n終身雇用を望む人も69.4％。\n\n出典：産業能率大学総合研究所「第36回 2025年度 新入社員の会社生活調査」（有効回答369名、2025年7月14日発表）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#年功序列 #成果主義 #新入社員 #Z世代 #雑学 #論争図鑑",
+    "tags": [
+      "年功序列",
+      "成果主義",
+      "新入社員",
+      "Z世代",
+      "終身雇用",
+      "働き方",
+      "雑学",
+      "豆知識",
+      "論争",
+      "日本"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "36年で初めて",
+    "sub": "新入社員 会社生活調査",
+    "a_label": "年功序列",
+    "a_value": 56.3,
+    "b_label": "成果主義",
+    "b_value": 43.6
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "新入社員が選んだのは、どっち？",
+      "visual": {
+        "type": "choice",
+        "a_label": "年功序列",
+        "b_label": "成果主義"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "この調査、1990年から続いてるのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "年功序列",
+        "b_label": "成果主義"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "36年間ずっと、成果主義が多数派だった",
+      "visual": {
+        "type": "choice",
+        "a_label": "年功序列",
+        "b_label": "成果主義",
+        "center": "<"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s04",
+      "ja": "それが2025年、ひっくり返ったのだ",
+      "tsukkomi": "えっ",
+      "visual": {
+        "type": "versus",
+        "a_label": "年功序列",
+        "a_value": 56.3,
+        "b_label": "成果主義",
+        "b_value": 43.6,
+        "unit": "%",
+        "decimals": 1,
+        "source": "産業能率大学 第36回 新入社員調査 n=369"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s05",
+      "ja": "年功序列が56.3％",
+      "visual": {
+        "type": "number",
+        "value": "56.3",
+        "unit": "%",
+        "label": "年功序列",
+        "side": "a",
+        "source": "産業能率大学 第36回 新入社員調査 n=369"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s06",
+      "ja": "成果主義は43.6％",
+      "visual": {
+        "type": "number",
+        "value": "43.6",
+        "unit": "%",
+        "label": "成果主義",
+        "side": "b",
+        "source": "産業能率大学 第36回 新入社員調査 n=369"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "36回目にして初の逆転なのだ",
+      "visual": {
+        "type": "number",
+        "value": "36",
+        "unit": "回目",
+        "label": "調査開始から",
+        "side": "a",
+        "source": "産業能率大学 1990年度〜2025年度"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s08",
+      "ja": "しかも、変わり方が急なのだ",
+      "visual": {
+        "type": "trend",
+        "unit": "%",
+        "baseline": 50,
+        "baseline_label": "半数",
+        "points": [
+          {
+            "label": "2022年度",
+            "value": 38.9
+          },
+          {
+            "label": "2024年度",
+            "value": 48.5
+          },
+          {
+            "label": "2025年度",
+            "value": 56.3
+          }
+        ],
+        "source": "産業能率大学 新入社員調査 各年度"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s09",
+      "ja": "3年前は38.9％しかなかった",
+      "visual": {
+        "type": "trend",
+        "unit": "%",
+        "baseline": 50,
+        "baseline_label": "半数",
+        "points": [
+          {
+            "label": "2022年度",
+            "value": 38.9
+          },
+          {
+            "label": "2024年度",
+            "value": 48.5
+          },
+          {
+            "label": "2025年度",
+            "value": 56.3
+          }
+        ],
+        "source": "産業能率大学 新入社員調査 各年度"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s10",
+      "ja": "3年で17ポイント上がったのだ",
+      "tsukkomi": "急すぎ",
+      "visual": {
+        "type": "trend",
+        "unit": "%",
+        "baseline": 50,
+        "baseline_label": "半数",
+        "points": [
+          {
+            "label": "2022年度",
+            "value": 38.9
+          },
+          {
+            "label": "2024年度",
+            "value": 48.5
+          },
+          {
+            "label": "2025年度",
+            "value": 56.3
+          }
+        ],
+        "source": "産業能率大学 新入社員調査 各年度"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "終身雇用を望む人も69.4％",
+      "visual": {
+        "type": "number",
+        "value": "69.4",
+        "unit": "%",
+        "label": "終身雇用を望む",
+        "side": "a",
+        "source": "産業能率大学 第36回 新入社員調査 n=369"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s12",
+      "ja": "若い世代ほど安定を選ぶのだ",
+      "tsukkomi": "意外だった",
+      "visual": {
+        "type": "versus",
+        "a_label": "年功序列",
+        "a_value": 56.3,
+        "b_label": "成果主義",
+        "b_value": 43.6,
+        "unit": "%",
+        "decimals": 1,
+        "source": "産業能率大学 第36回 新入社員調査 n=369"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち派？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "年功序列派",
+        "b_label": "成果主義派"
+      },
+      "hold": 1.0
+    }
+  ]
+}
