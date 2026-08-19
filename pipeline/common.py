@@ -20,8 +20,9 @@ USER_AGENT = (
 def load_config() -> dict:
     if not CONFIG_PATH.exists():
         return {}
-    with CONFIG_PATH.open("rb") as fp:
-        return tomllib.load(fp)
+    # 메모장 등이 붙이는 UTF-8 BOM 이 있으면 tomllib 이 첫 줄에서 죽는다.
+    text = CONFIG_PATH.read_text(encoding="utf-8-sig")
+    return tomllib.loads(text)
 
 
 def episode_dir(episode_id: str) -> Path:

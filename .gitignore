@@ -17,3 +17,4 @@ episodes/*/out/*.wav
 !episodes/*/assets/voice/timeline.json
 client_secret*.json
 voice_samples/
+.venv/

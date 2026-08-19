@@ -46,7 +46,7 @@ PARTICLES = "はがをにへとでもやかのねよねばなら"
 BREAK_AFTER = "。、！？」』）"      # 여기서 끊으면 가장 자연스럽다
 
 
-UNITS = "％%年月日円人票県市区時分秒個回目度割倍"   # 숫자에 붙는 단위
+UNITS = "％%年月日円人票県市区時分秒個回目度割倍万億千ポ"   # 숫자에 붙는 단위(ポ=ポイント)
 FORBIDDEN = float("inf")
 
 
@@ -75,6 +75,10 @@ def _break_penalty(text: str, index: int) -> float:
         return FORBIDDEN
     if before.isdigit() and after in UNITS:
         return FORBIDDEN
+    if before in "万億千" and after.isdigit():
+        return FORBIDDEN                   # 16万/9447 처럼 자릿수 사이를 가르지 않는다
+    if before in "万億千" and after in UNITS:
+        return FORBIDDEN                   # 1593万/票
 
     if before in BREAK_AFTER:
         return -40.0                       # 문장부호 뒤 — 가장 자연스럽다
@@ -123,6 +127,21 @@ def wrap_balanced(draw: ImageDraw.ImageDraw, text: str, font,
         cursor = max(step, cursor + 1)
         rows += 1
 
+    # 최소 줄 수로는 금지 규칙(숫자↔단위 등)을 지킬 수 없는 문장이 있다.
+    # 「しかも今、国は28度と言っていない」가 두 줄에 안 들어가는 경우가 그렇다.
+    # 이때 글자 단위 줄바꿈으로 떨어지면 벌점을 아예 안 보므로 「28 / 度」처럼
+    # 가장 나쁜 자리에서 갈린다. 한 줄 늘려서라도 규칙을 지키는 쪽을 먼저 쓴다.
+    for count in (rows, rows + 1, rows + 2):
+        lines = _split_rows(text, widths, count, max_width)
+        if lines is not None:
+            return lines
+    return wrap(draw, text, font, max_width)       # 그래도 안 되면 예전 방식
+
+
+def _split_rows(text: str, widths: list[float], rows: int,
+                max_width: int) -> list[str] | None:
+    """정확히 rows 줄로 나눈다. 금지된 자리만 피해서는 못 나누면 None."""
+    length = len(text)
     target = widths[-1] / rows
     INF = float("inf")
     cost = [[INF] * (rows + 1) for _ in range(length + 1)]
@@ -134,7 +153,7 @@ def wrap_balanced(draw: ImageDraw.ImageDraw, text: str, font,
             for start in range(end):
                 if cost[start][row - 1] == INF:
                     continue
-                span = width_of(start, end)
+                span = widths[end] - widths[start]
                 if span > max_width:
                     continue
                 if text[start] in NO_LINE_START or text[end - 1] in NO_LINE_END:
@@ -150,7 +169,7 @@ def wrap_balanced(draw: ImageDraw.ImageDraw, text: str, font,
                     back[end][row] = start
 
     if cost[length][rows] == INF:
-        return wrap(draw, text, font, max_width)   # 어떤 분할도 못 찾으면 예전 방식
+        return None
 
     lines, end, row = [], length, rows
     while row > 0:
