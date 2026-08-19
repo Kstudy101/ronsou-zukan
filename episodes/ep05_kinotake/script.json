@@ -1,0 +1,269 @@
+{
+  "id": "ep05_kinotake",
+  "series": "ニッポン論争図鑑",
+  "episode": 5,
+  "topic_ja": "きのこの山 vs たけのこの里",
+  "source": "明治 きのこの山・たけのこの里 国民総選挙 2018（総投票数 約1,593万票）／2019（同 1,058万7,785票）",
+  "expected_comments": [
+    "どっちも党は裏切り者",
+    "2019は松本潤効果だろ",
+    "そろそろ第3回やってくれ明治"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "きのこの山",
+      "pronunciation": "キノコノヤマ",
+      "accent_type": 0
+    },
+    {
+      "surface": "たけのこの里",
+      "pronunciation": "タケノコノサト",
+      "accent_type": 0
+    },
+    {
+      "surface": "きのこ党",
+      "pronunciation": "キノコトウ",
+      "accent_type": 0
+    },
+    {
+      "surface": "たけのこ党",
+      "pronunciation": "タケノコトウ",
+      "accent_type": 0
+    },
+    {
+      "surface": "どっちも党",
+      "pronunciation": "ドッチモトウ",
+      "accent_type": 0
+    },
+    {
+      "surface": "国民総選挙",
+      "pronunciation": "コクミンソウセンキョ",
+      "accent_type": 0
+    }
+  ],
+  "youtube": {
+    "title": "【1,593万票】きのこ vs たけのこ、公式戦は1勝1敗で止まっている",
+    "description": "明治が2018年と2019年に公式で「国民総選挙」をやりました。\n2018年：たけのこ党 6,931,220票 対 きのこ党 6,761,773票（どっちも党 2,238,204票）。2党の比率にして50.6％対49.4％、差はわずか1.2ポイント。\n2019年：きのこ党 6,021,986票 対 たけのこ党 4,565,799票で、きのこが初勝利。\n通算1勝1敗。公式の対決はそこで終わっていて、だから今も決着がつきません。\n\n出典：株式会社明治「きのこの山・たけのこの里 国民総選挙2018」投票結果（2018年9月11日発表、投票期間2018年2月26日〜7月31日）／「国民総選挙2019」投票結果（2019年12月17日発表）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#きのこの山 #たけのこの里 #きのこたけのこ戦争 #明治 #雑学 #論争図鑑",
+    "tags": [
+      "きのこの山",
+      "たけのこの里",
+      "きのこたけのこ戦争",
+      "国民総選挙",
+      "明治",
+      "お菓子",
+      "雑学",
+      "豆知識",
+      "論争",
+      "日本"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "公式戦 1勝1敗",
+    "sub": "明治 国民総選挙2018 2党合計1,369万票",
+    "a_label": "きのこの山",
+    "a_value": 6761773,
+    "b_label": "たけのこの里",
+    "b_value": 6931220
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "きのこ派？たけのこ派？",
+      "visual": {
+        "type": "choice",
+        "a_label": "きのこ",
+        "b_label": "たけのこ"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "明治が、公式に選挙をやったのだ",
+      "tsukkomi": "ガチなやつ",
+      "visual": {
+        "type": "choice",
+        "a_label": "きのこ",
+        "b_label": "たけのこ",
+        "center": "VS"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "2018年は、1593万票なのだ",
+      "visual": {
+        "type": "number",
+        "value": "1,593",
+        "unit": "万票",
+        "label": "総投票数 2018年",
+        "side": "a",
+        "source": "明治 国民総選挙2018 投票期間 2018年2月26日〜7月31日"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "たけのこ党、693万1220票",
+      "visual": {
+        "type": "number",
+        "value": "6,931,220",
+        "unit": "票",
+        "label": "たけのこ党 2018年",
+        "side": "b",
+        "source": "明治 国民総選挙2018 2018年9月11日発表"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s05",
+      "ja": "きのこ党、676万1773票",
+      "visual": {
+        "type": "number",
+        "value": "6,761,773",
+        "unit": "票",
+        "label": "きのこ党 2018年",
+        "side": "a",
+        "source": "明治 国民総選挙2018 2018年9月11日発表"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s06",
+      "ja": "差は、たった1.2ポイント",
+      "tsukkomi": "ほぼ互角",
+      "visual": {
+        "type": "versus",
+        "a_label": "きのこ党",
+        "a_value": 49.4,
+        "b_label": "たけのこ党",
+        "b_value": 50.6,
+        "unit": "%",
+        "decimals": 1,
+        "source": "明治 国民総選挙2018 2党合計13,692,993票での比率"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s07",
+      "ja": "しかも「どっちも党」が223万票いたのだ",
+      "tsukkomi": "裏切り者",
+      "visual": {
+        "type": "number",
+        "value": "2,238,204",
+        "unit": "票",
+        "label": "どっちも党 2018年",
+        "side": "b",
+        "source": "明治 国民総選挙2018 2018年9月11日発表"
+      },
+      "hold": 0.4,
+      "tts_text": "しかも、どっちも党が223万票いたのだ"
+    },
+    {
+      "id": "s08",
+      "ja": "翌年、再戦がおこなわれた",
+      "visual": {
+        "type": "choice",
+        "a_label": "きのこ",
+        "b_label": "たけのこ",
+        "center": "再"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s09",
+      "ja": "今度はきのこが、602万1986票",
+      "visual": {
+        "type": "number",
+        "value": "6,021,986",
+        "unit": "票",
+        "label": "新きのこ党 2019年",
+        "side": "a",
+        "source": "明治 国民総選挙2019 2019年12月17日発表"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s10",
+      "ja": "たけのこは、456万5799票",
+      "visual": {
+        "type": "number",
+        "value": "4,565,799",
+        "unit": "票",
+        "label": "新たけのこ党 2019年",
+        "side": "b",
+        "source": "明治 国民総選挙2019 2019年12月17日発表"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s11",
+      "ja": "56.9対43.1、きのこの圧勝",
+      "tsukkomi": "えっ",
+      "visual": {
+        "type": "versus",
+        "a_label": "きのこ党",
+        "a_value": 56.9,
+        "b_label": "たけのこ党",
+        "b_value": 43.1,
+        "unit": "%",
+        "decimals": 1,
+        "source": "明治 国民総選挙2019 総投票数10,587,785票"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s12",
+      "ja": "通算1勝1敗。公式戦はここで止まっているのだ",
+      "tsukkomi": "決着つけて",
+      "visual": {
+        "type": "number",
+        "value": "1勝1敗",
+        "unit": "",
+        "label": "公式戦 通算成績 2018〜2019",
+        "side": "a",
+        "source": "明治 国民総選挙 2018・2019"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち派？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "きのこ派",
+        "b_label": "たけのこ派"
+      },
+      "hold": 1.0
+    }
+  ]
+}

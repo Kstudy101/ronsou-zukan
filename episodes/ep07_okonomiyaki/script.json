@@ -1,0 +1,210 @@
+{
+  "id": "ep07_okonomiyaki",
+  "series": "ニッポン論争図鑑",
+  "episode": 7,
+  "topic_ja": "お好み焼きはごはんのおかず論争",
+  "source": "オタフクソース「地域別コナモンに関する調査」2018年5月発表 (調査 2018年4月16〜17日、20〜49歳男女 500名、インターネット調査)",
+  "expected_comments": [
+    "関東やけどおかずやろ",
+    "炭水化物に炭水化物は無理",
+    "お好み焼き定食は実在する"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    { "surface": "粉もん", "pronunciation": "コナモン", "accent_type": 0 },
+    { "surface": "主食", "pronunciation": "シュショク", "accent_type": 0 },
+    { "surface": "関西", "pronunciation": "カンサイ", "accent_type": 1 },
+    { "surface": "関東", "pronunciation": "カントウ", "accent_type": 1 },
+    { "surface": "定食", "pronunciation": "テイショク", "accent_type": 0 }
+  ],
+  "youtube": {
+    "title": "【関東49.2％】お好み焼きは「ごはんのおかず」か、ちょうど半分に割れた",
+    "description": "お好み焼きでごはんを食べるか。関西と関東で、ずっと噛み合わない話です。\nオタフクソースが2018年に全国500人へ聞いた調査では、「ごはんのおかずとして食べたことがある」は全国で57.8％（何度もある33.8％＋ある24.0％）。\n地域で割ると関西68.3％、関東49.2％。関東はほぼちょうど半分に割れました。\n\n「何度もある」だけで見ると関西39.7％に対して関東22.2％で、およそ2倍の開き。関西で「一度もない」人は20.6％しかいません。\n\n出典：オタフクソース株式会社「地域別コナモンに関する調査」（2018年5月発表、調査期間2018年4月16〜17日、20〜49歳の男女500名、インターネット調査）／ねとらぼによる同調査の報道\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#お好み焼き #粉もん #関西 #関東 #たこ焼き #雑学 #論争図鑑",
+    "tags": [
+      "お好み焼き",
+      "たこ焼き",
+      "粉もん",
+      "ごはんのおかず",
+      "関西",
+      "関東",
+      "地域差",
+      "雑学",
+      "豆知識",
+      "論争"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "関東、ちょうど半分",
+    "sub": "オタフクソース2018年調査 関東の回答",
+    "a_label": "おかずにした",
+    "a_value": 49.2,
+    "b_label": "それ以外",
+    "b_value": 50.8
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "お好み焼きで、ごはん食べる？",
+      "visual": { "type": "choice", "a_label": "おかず", "b_label": "主食" },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "関西は当然、関東は絶句するのだ",
+      "visual": { "type": "choice", "a_label": "おかず", "b_label": "主食", "center": "VS" },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "全国500人に聞いた調査があるのだ",
+      "visual": {
+        "type": "number", "value": "33.8", "unit": "%",
+        "label": "おかずにしたことが「何度もある」全国",
+        "side": "a",
+        "source": "オタフクソース 地域別コナモンに関する調査 2018年 n=500"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "「ある」を足すと57.8％",
+      "tsukkomi": "多数派なんかい",
+      "visual": {
+        "type": "number", "value": "57.8", "unit": "%",
+        "label": "おかずにしたことがある 全国",
+        "side": "a",
+        "source": "オタフクソース 地域別コナモンに関する調査 2018年 n=500"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s05",
+      "ja": "全国で見れば、おかず派が勝っている",
+      "visual": {
+        "type": "versus",
+        "a_label": "おかずにした", "a_value": 57.8,
+        "b_label": "それ以外", "b_value": 42.2,
+        "unit": "%", "decimals": 1,
+        "source": "オタフクソース 2018年 n=500 全国"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s06",
+      "ja": "関西はというと、68.3％",
+      "tsukkomi": "そらそうよ",
+      "visual": {
+        "type": "number", "value": "68.3", "unit": "%",
+        "label": "おかずにしたことがある 関西",
+        "side": "a",
+        "source": "オタフクソース 2018年 n=500 関西"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "そして関東は、49.2％",
+      "visual": {
+        "type": "number", "value": "49.2", "unit": "%",
+        "label": "おかずにしたことがある 関東",
+        "side": "b",
+        "source": "オタフクソース 2018年 n=500 関東"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s08",
+      "ja": "関東は、ちょうど半分に割れたのだ",
+      "tsukkomi": "揉めるわけだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "おかずにした", "a_value": 49.2,
+        "b_label": "それ以外", "b_value": 50.8,
+        "unit": "%", "decimals": 1,
+        "source": "オタフクソース 2018年 n=500 関東"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s09",
+      "ja": "「何度もある」で見ると、関西39.7％",
+      "visual": {
+        "type": "number", "value": "39.7", "unit": "%",
+        "label": "「何度もある」関西",
+        "side": "a",
+        "source": "オタフクソース 2018年 n=500 関西"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s10",
+      "ja": "関東は22.2％。ほぼ2倍の差なのだ",
+      "tsukkomi": "そこは割れてない",
+      "visual": {
+        "type": "number", "value": "22.2", "unit": "%",
+        "label": "「何度もある」関東",
+        "side": "b",
+        "source": "オタフクソース 2018年 n=500 関東"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "関西で一度もない人は20.6％だけ",
+      "visual": {
+        "type": "number", "value": "20.6", "unit": "%",
+        "label": "「一度もない」関西",
+        "side": "a",
+        "source": "オタフクソース 2018年 n=500 関西"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s12",
+      "ja": "関東の中でも、意見は割れているのだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "おかずにした", "a_value": 49.2,
+        "b_label": "それ以外", "b_value": 50.8,
+        "unit": "%", "decimals": 1,
+        "source": "オタフクソース 2018年 n=500 関東"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち？教えてほしいのだ",
+      "visual": { "type": "cta", "a_label": "ごはん合う派", "b_label": "合わない派" },
+      "hold": 1.0
+    }
+  ]
+}

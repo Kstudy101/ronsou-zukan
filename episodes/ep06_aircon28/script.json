@@ -1,0 +1,258 @@
+{
+  "id": "ep06_aircon28",
+  "series": "ニッポン論争図鑑",
+  "episode": 6,
+  "topic_ja": "エアコン28度論争",
+  "source": "ダイキン工業 2018年7月17日発表 オフィスの空調に関する実態調査 (n=500) ／ 環境省 COOLBIZ 掲載調査 (2017年6月 n=1,342)",
+  "expected_comments": [
+    "うちの会社26度にしてるわ",
+    "28度で仕事とか無理",
+    "室温だったの今知った"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "設定温度",
+      "pronunciation": "セッテイオンド",
+      "accent_type": 5
+    },
+    {
+      "surface": "室温",
+      "pronunciation": "シツオン",
+      "accent_type": 0
+    },
+    {
+      "surface": "環境省",
+      "pronunciation": "カンキョウショウ",
+      "accent_type": 3
+    },
+    {
+      "surface": "勘違い",
+      "pronunciation": "カンチガイ",
+      "accent_type": 3
+    }
+  ],
+  "youtube": {
+    "title": "「エアコン28度」を正しく理解している人は32.3％しかいなかった",
+    "description": "夏になると必ず出てくる「エアコンは28度」。\nでも実際に28度に設定しているオフィスは19.8％だけで、27度以下が64.8％でした。\n28度を「不快」「やや不快」と感じる人は男性47.2％、女性47.9％。ほぼ半々です。\n\nそして「28度」は、エアコンの設定温度ではなく室温のことでした。正しく理解している人は32.3％。残りの67.7％は勘違いしていたことになります。\nさらに今、環境省の呼びかけに「28度」という数字はありません。\n\n出典：ダイキン工業「オフィスの空調に関する実態調査」（2018年7月17日発表、全国のエアコン設置オフィスで働く20〜60代男女500名、調査時期2018年6月13〜14日）／環境省 COOLBIZ 掲載「クールビズ28℃の真実」（2017年6月2〜5日、全国20〜60代男女1,342名）／環境省「令和6年度クールビズについて」報道発表資料\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#エアコン #クールビズ #28度 #オフィス #雑学 #論争図鑑",
+    "tags": [
+      "エアコン",
+      "クールビズ",
+      "28度",
+      "設定温度",
+      "室温",
+      "オフィス",
+      "夏",
+      "雑学",
+      "豆知識",
+      "論争"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "28度の大誤解",
+    "sub": "環境省サイト掲載調査 n=1,342",
+    "a_label": "正しく理解",
+    "a_value": 32.3,
+    "b_label": "勘違い",
+    "b_value": 67.7
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "オフィスのエアコン、何度にしてる？",
+      "visual": {
+        "type": "choice",
+        "a_label": "28度",
+        "b_label": "27度以下"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "エアコンは28度。そう習ったのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "28度",
+        "b_label": "27度以下",
+        "center": "VS"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "実際に28度なのは19.8％だけ",
+      "visual": {
+        "type": "number",
+        "value": "19.8",
+        "unit": "%",
+        "label": "28度に設定している",
+        "side": "a",
+        "source": "ダイキン工業 2018年7月17日発表 n=500"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "27度以下が64.8％もあるのだ",
+      "tsukkomi": "暑いもん",
+      "visual": {
+        "type": "number",
+        "value": "64.8",
+        "unit": "%",
+        "label": "27度以下に設定している",
+        "side": "b",
+        "source": "ダイキン工業 2018年7月17日発表 n=500"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s05",
+      "ja": "28度が不快な女性は47.9％",
+      "visual": {
+        "type": "number",
+        "value": "47.9",
+        "unit": "%",
+        "label": "28度が不快・やや不快 女性",
+        "side": "b",
+        "source": "ダイキン工業 2018年7月17日発表 女性250名"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s06",
+      "ja": "男性も47.2％。ほぼ半々なのだ",
+      "tsukkomi": "そりゃ割れる",
+      "visual": {
+        "type": "number",
+        "value": "47.2",
+        "unit": "%",
+        "label": "28度が不快・やや不快 男性",
+        "side": "a",
+        "source": "ダイキン工業 2018年7月17日発表 男性250名"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s07",
+      "ja": "そもそも28度は、設定温度じゃない",
+      "tsukkomi": "えっ",
+      "visual": {
+        "type": "choice",
+        "a_label": "設定温度",
+        "b_label": "室温",
+        "center": "?"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s08",
+      "ja": "28度は、室温のことだったのだ",
+      "visual": {
+        "type": "number",
+        "value": "室温",
+        "unit": "",
+        "label": "28度が指しているのは",
+        "side": "b",
+        "source": "環境省 COOLBIZ「クールビズ28℃の真実」"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s09",
+      "ja": "正しく知っていた人は32.3％",
+      "visual": {
+        "type": "versus",
+        "a_label": "正しく理解",
+        "a_value": 32.3,
+        "b_label": "勘違い",
+        "b_value": 67.7,
+        "unit": "%",
+        "decimals": 1,
+        "source": "環境省 COOLBIZ 掲載調査 2017年6月 n=1,342"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s10",
+      "ja": "残りの67.7％は勘違いしていた",
+      "tsukkomi": "うちもだ",
+      "visual": {
+        "type": "versus",
+        "a_label": "正しく理解",
+        "a_value": 32.3,
+        "b_label": "勘違い",
+        "b_value": 67.7,
+        "unit": "%",
+        "decimals": 1,
+        "source": "環境省 COOLBIZ 掲載調査 2017年6月 n=1,342"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "しかも今、国は28度と言っていない",
+      "tsukkomi": "マジで",
+      "visual": {
+        "type": "number",
+        "value": "なし",
+        "unit": "",
+        "label": "今の呼びかけにある温度の数字",
+        "side": "b",
+        "source": "環境省 令和6年度クールビズについて 報道発表資料"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s12",
+      "ja": "みんな、何度で戦っていたのだ",
+      "visual": {
+        "type": "number",
+        "value": "なし",
+        "unit": "",
+        "label": "今の呼びかけにある温度の数字",
+        "side": "b",
+        "source": "環境省 令和6年度クールビズについて 報道発表資料"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s13",
+      "ja": "あなたの職場は何度？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "28度派",
+        "b_label": "下げる派"
+      },
+      "hold": 1.0
+    }
+  ]
+}
