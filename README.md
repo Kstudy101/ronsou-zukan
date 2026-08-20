@@ -48,6 +48,38 @@ python pipeline/voicevox.py speakers         # 화자 목록
 | render | `pipeline/render.py` | 도해 + 텔롭 + 나레이션·BGM 믹스 → 1080×1920 H.264, −14 LUFS |
 | thumb | `pipeline/thumbnail.py` | 1280×720 섬네일 |
 
+## 자동 실행
+
+윈도우 작업 스케줄러가 1시간마다 `autorun.bat` 을 부른다. 한 번에 **한 편만**
+만들어 비공개로 올린다.
+
+```bash
+python autorun.py             # 한 편 처리
+python autorun.py --status    # 큐 상태
+python autorun.py --dry-run   # 만들되 올리지는 않음
+```
+
+```powershell
+schtasks /Create /TN "RonsouZukan-AutoUpload" /TR "C:\...\hanil\autorun.bat" `
+         /SC HOURLY /MO 1 /ST 09:00 /F
+schtasks /Query /TN "RonsouZukan-AutoUpload"      # 확인
+schtasks /Delete /TN "RonsouZukan-AutoUpload" /F  # 해제
+```
+
+VOICEVOX 엔진이 꺼져 있으면 알아서 띄우고 모델이 올라올 때까지 기다린다.
+진행 상황은 `autorun.log`, 어디까지 올렸는지는 `autorun_state.json` 에 남는다.
+둘 다 커밋 대상이 아니다.
+
+**대본은 자동 생성하지 않는다.** 이 채널의 신뢰는 「출처 없는 수치는 렌더가
+거부한다」는 장치에 걸려 있는데, 대본까지 기계가 지어내면 그 장치가 무의미해진다.
+`autorun.py` 는 **사람이 검증해 둔 대본을 영상으로 만들어 올리는** 부분만 맡는다.
+큐가 비면 아무것도 하지 않고 끝난다.
+
+**하루 상한은 4편이다**(`DAILY_CAP`). 업로드 1건에 YouTube API 쿼터가 약 1,600
+유닛 들고 일일 기본 한도가 10,000 이라 6건이 물리적 상한이다. 게다가 짧은 간격의
+대량 투고는 「양산형」 신호로 읽힌다. 스케줄은 매시 돌지만 상한에 닿으면
+조용히 끝난다.
+
 ## 지켜야 할 규칙 셋
 
 이 채널은 소개문에 「数字はすべて出典つき」라고 써 두었다. 그것을 코드로 강제한다.

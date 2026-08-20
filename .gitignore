@@ -18,3 +18,7 @@ episodes/*/out/*.wav
 client_secret*.json
 voice_samples/
 .venv/
+
+# 자동 실행 흔적 — 돌릴 때마다 바뀌고 기계마다 다르다
+autorun.log
+autorun_state.json
