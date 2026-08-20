@@ -1,0 +1,263 @@
+{
+  "id": "ep04_hanabi",
+  "series": "ニッポン論争図鑑",
+  "episode": 4,
+  "topic_ja": "花火大会の有料席化",
+  "source": "帝国データバンク 2026年「主要花火大会」有料席導入・価格調査 (対象106大会、2026/7/22発表)",
+  "expected_comments": [
+    "無料ゾーンのゴミがひどいから有料化は仕方ない",
+    "地元民が景色を金で奪われるのはおかしい",
+    "4万円は高すぎ。一般席でも五千円は高い"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "花火大会",
+      "pronunciation": "ハナビタイカイ",
+      "accent_type": 4
+    },
+    {
+      "surface": "有料席",
+      "pronunciation": "ユウリョウセキ",
+      "accent_type": 4
+    },
+    {
+      "surface": "一般席",
+      "pronunciation": "イッパンセキ",
+      "accent_type": 4
+    },
+    {
+      "surface": "最上位席",
+      "pronunciation": "サイジョウイセキ",
+      "accent_type": 5
+    },
+    {
+      "surface": "値上げ",
+      "pronunciation": "ネアゲ",
+      "accent_type": 0
+    }
+  ],
+  "youtube": {
+    "title": "【初めて4万円超】花火大会の最上位席、一般席の7.36倍",
+    "description": "主要106大会のうち、有料席があるのは84大会。約8割です。\n今年は45大会が値上げ。一般席の平均は5517円、最上位席は4万611円。調査開始以来、初めて平均4万円を超えました。差は7.36倍で過去最大。一方で5大会は中止・未定です。\n\n出典：帝国データバンク「2026年『主要花火大会』有料席導入・価格調査」（対象106大会、2026年7月22日発表）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#花火大会 #有料席 #どっち派 #雑学 #論争図鑑",
+    "tags": [
+      "花火大会",
+      "有料席",
+      "プレミアム席",
+      "どっち派",
+      "雑学",
+      "豆知識",
+      "夏",
+      "論争",
+      "日本",
+      "値上げ"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "差は7.36倍",
+    "sub": "花火大会 有料席 2026",
+    "a_label": "一般席",
+    "a_value": 5517,
+    "b_label": "最上位席",
+    "b_value": 40611
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "花火大会、まだタダで見れる？",
+      "visual": {
+        "type": "choice",
+        "a_label": "タダで見る",
+        "b_label": "有料で見る"
+      },
+      "hold": 0.25
+    },
+    {
+      "id": "s02",
+      "ja": "主要106大会を調べたのだ",
+      "visual": {
+        "type": "number",
+        "value": "106",
+        "unit": "大会",
+        "label": "夏季の主要大会",
+        "side": "a",
+        "source": "帝国データバンク 2026年有料席調査 対象106大会"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s03",
+      "ja": "有料席があるのは、84大会",
+      "visual": {
+        "type": "number",
+        "value": "84",
+        "unit": "大会",
+        "label": "有料席あり",
+        "side": "b",
+        "source": "帝国データバンク 2026年有料席調査 対象106大会"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s04",
+      "ja": "約8割が、お金を取るのだ",
+      "tsukkomi": "え、8割",
+      "visual": {
+        "type": "versus",
+        "a_label": "有料席あり",
+        "a_value": 84,
+        "b_label": "それ以外",
+        "b_value": 22,
+        "unit": "大会",
+        "decimals": 0,
+        "source": "帝国データバンク 2026年有料席調査 対象106大会"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s05",
+      "ja": "しかも今年、45大会が値上げした",
+      "visual": {
+        "type": "number",
+        "value": "45",
+        "unit": "大会",
+        "label": "2026年に値上げ",
+        "side": "b",
+        "source": "帝国データバンク 2026年有料席調査"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s06",
+      "ja": "一般席の平均は、5517円",
+      "visual": {
+        "type": "number",
+        "value": "5,517",
+        "unit": "円",
+        "label": "一般席 平均",
+        "side": "a",
+        "source": "帝国データバンク 2026年有料席調査 最安値平均"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s07",
+      "ja": "最上位席は、4万611円",
+      "visual": {
+        "type": "number",
+        "value": "4万611",
+        "unit": "円",
+        "label": "最上位席 平均",
+        "side": "b",
+        "source": "帝国データバンク 2026年有料席調査 最高値平均"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s08",
+      "ja": "4万円を初めて超えたのだ",
+      "tsukkomi": "高すぎ",
+      "visual": {
+        "type": "number",
+        "value": "4万",
+        "unit": "円超",
+        "label": "調査開始以来 初",
+        "side": "b",
+        "source": "帝国データバンク 2026年有料席調査 最高値平均4万611円"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s09",
+      "ja": "一般席との差は、7.36倍",
+      "visual": {
+        "type": "versus",
+        "a_label": "一般席",
+        "a_value": 5517,
+        "b_label": "最上位席",
+        "b_value": 40611,
+        "unit": "円",
+        "decimals": 0,
+        "source": "帝国データバンク 2026年有料席調査"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s10",
+      "ja": "調査開始以来、過去最大なのだ",
+      "visual": {
+        "type": "number",
+        "value": "7.36",
+        "unit": "倍",
+        "label": "価格差 過去最大",
+        "side": "b",
+        "source": "帝国データバンク 前年7.15倍 → 2026年7.36倍"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "一方で、5大会が中止になった",
+      "visual": {
+        "type": "number",
+        "value": "5",
+        "unit": "大会",
+        "label": "2026年 中止・未定",
+        "side": "b",
+        "source": "帝国データバンク 2026年有料席調査 対象106大会"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s12",
+      "ja": "値上げしないと、大会が消える",
+      "tsukkomi": "どっちも分かる",
+      "visual": {
+        "type": "choice",
+        "a_label": "有料化賛成",
+        "b_label": "無料で見たい",
+        "center": "vs"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち派？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "有料でも見る",
+        "b_label": "タダじゃなきゃ嫌"
+      },
+      "hold": 1.0
+    }
+  ]
+}
