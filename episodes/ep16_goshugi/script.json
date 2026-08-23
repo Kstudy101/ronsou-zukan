@@ -1,0 +1,100 @@
+{
+  "id": "ep16_goshugi",
+  "series": "ニッポン論争図鑑",
+  "episode": 16,
+  "topic_ja": "ご祝儀3万円は高いか",
+  "source": "トキハナ ご祝儀に関する調査",
+
+  "expected_comments": [
+    "料理と引き出物考えたら妥当だと思う",
+    "20代で3万は正直きつい",
+    "会費制がもっと広まってほしい"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "祝儀", "pronunciation": "シュウギ", "accent_type": 1},
+    {"surface": "会費制", "pronunciation": "カイヒセイ", "accent_type": 0},
+    {"surface": "引き出物", "pronunciation": "ヒキデモノ", "accent_type": 0},
+    {"surface": "貯蓄", "pronunciation": "チョチク", "accent_type": 0}
+  ],
+
+  "youtube": {
+    "title": "【8ポイント減】20代の56.3％が「ご祝儀3万円は高い」と答えた",
+    "description": "友人の結婚式のご祝儀。実際に包まれている額は約75％が3万円です。\nところが20代の56.3％が「高い」と答えました。前回調査の64.3％からは8ポイント下がっています。\n\n20代の38.4％は、毎月の貯蓄・資産運用額が3万円以下。ご祝儀1回で、ひと月分が消える計算になります。\n一方で「料理と引き出物の原価を考えれば妥当だ」という声もあります。会費制の相場は1.5万〜2万円です。\n\nあなたはどっちだと思いますか。\n\n出典：トキハナ ご祝儀に関する調査\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#ご祝儀 #結婚式 #20代 #会費制 #雑学 #論争図鑑",
+    "tags": ["ご祝儀", "結婚式", "20代", "会費制", "お金", "マナー", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta",
+    "headline": "1年で8ポイント減", "sub": "20代「ご祝儀3万円は高い」",
+    "before_label": "前回調査", "before": "64.3%",
+    "after_label": "今回調査", "after": "56.3%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "友達の結婚式、いくら包む？",
+      "visual": {"type": "choice", "a_label": "3万円", "b_label": "それ以下", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s02", "ja": "実際は、約75パーセントが3万円なのだ",
+      "visual": {"type": "number", "value": "75", "unit": "%", "label": "友人へのご祝儀 3万円", "side": "a",
+                 "source": "トキハナ ご祝儀に関する調査"}, "hold": 0.4 },
+
+    { "id": "s03", "ja": "でも20代は、半分以上が高いと感じている",
+      "visual": {"type": "versus", "a_label": "高い", "a_value": 56.3, "b_label": "そう思わない", "b_value": 43.7,
+                 "unit": "%", "decimals": 1,
+                 "source": "トキハナ ご祝儀に関する調査 20代"}, "hold": 0.45 },
+
+    { "id": "s04", "ja": "ただ、前回調査は64.3パーセントだった",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "トキハナ ご祝儀に関する調査 20代「高い」と回答した割合",
+                 "points": [{"label": "前回調査", "value": 64.3},
+                            {"label": "今回調査", "value": 56.3}]}, "hold": 0.4 },
+
+    { "id": "s05", "ja": "1年で8ポイント下がったのだ",
+      "tsukkomi": "慣れた？",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "トキハナ ご祝儀に関する調査 20代「高い」と回答した割合",
+                 "points": [{"label": "前回調査", "value": 64.3},
+                            {"label": "今回調査", "value": 56.3}]}, "hold": 0.5 },
+
+    { "id": "s06", "ja": "そもそも、なぜ高いと感じるのか",
+      "visual": {"type": "choice", "a_label": "高い", "b_label": "妥当", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s07", "ja": "20代の38.4パーセントは、毎月の貯蓄が3万円以下",
+      "visual": {"type": "number", "value": "38.4", "unit": "%", "label": "20代 月の貯蓄3万円以下", "side": "b",
+                 "source": "トキハナ ご祝儀に関する調査"}, "hold": 0.45 },
+
+    { "id": "s08", "ja": "ご祝儀1回で、ひと月分が消える計算なのだ",
+      "tsukkomi": "そりゃきつい",
+      "visual": {"type": "number", "value": "1", "unit": "か月分", "label": "ご祝儀1回で消える貯蓄", "side": "b",
+                 "source": "トキハナ ご祝儀に関する調査より算出"}, "hold": 0.5 },
+
+    { "id": "s09", "ja": "それでも妥当だという声もあるのだ",
+      "visual": {"type": "choice", "a_label": "高い", "b_label": "妥当", "center": "="}, "hold": 0.35 },
+
+    { "id": "s10", "ja": "料理と引き出物で消えるから、という理由なのだ",
+      "visual": {"type": "choice", "a_label": "料理", "b_label": "引き出物", "center": "原価"}, "hold": 0.45 },
+
+    { "id": "s11", "ja": "第三の選択肢が、会費制なのだ",
+      "visual": {"type": "number", "value": "1.5〜2", "unit": "万円", "label": "会費制の相場", "side": "a",
+                 "source": "トキハナ ご祝儀に関する調査"}, "hold": 0.45 },
+
+    { "id": "s12", "ja": "あなたは3万円、高いと思う？",
+      "visual": {"type": "cta", "a_label": "高いと思う", "b_label": "妥当だと思う"}, "hold": 1.0 }
+  ]
+}

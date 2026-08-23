@@ -1,0 +1,110 @@
+{
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speaker": 3,
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "total": 47.76,
+  "scenes": [
+    {
+      "id": "s01",
+      "audio": "s01.wav",
+      "start": 0.0,
+      "speech": 3.01,
+      "hold": 0.35,
+      "duration": 3.36
+    },
+    {
+      "id": "s02",
+      "audio": "s02.wav",
+      "start": 3.36,
+      "speech": 4.06,
+      "hold": 0.4,
+      "duration": 4.46
+    },
+    {
+      "id": "s03",
+      "audio": "s03.wav",
+      "start": 7.82,
+      "speech": 3.89,
+      "hold": 0.45,
+      "duration": 4.34
+    },
+    {
+      "id": "s04",
+      "audio": "s04.wav",
+      "start": 12.16,
+      "speech": 4.29,
+      "hold": 0.4,
+      "duration": 4.69
+    },
+    {
+      "id": "s05",
+      "audio": "s05.wav",
+      "start": 16.85,
+      "speech": 2.42,
+      "hold": 0.5,
+      "duration": 2.92
+    },
+    {
+      "id": "s06",
+      "audio": "s06.wav",
+      "start": 19.77,
+      "speech": 2.76,
+      "hold": 0.35,
+      "duration": 3.11
+    },
+    {
+      "id": "s07",
+      "audio": "s07.wav",
+      "start": 22.88,
+      "speech": 5.48,
+      "hold": 0.45,
+      "duration": 5.93
+    },
+    {
+      "id": "s08",
+      "audio": "s08.wav",
+      "start": 28.81,
+      "speech": 4.0,
+      "hold": 0.5,
+      "duration": 4.5
+    },
+    {
+      "id": "s09",
+      "audio": "s09.wav",
+      "start": 33.31,
+      "speech": 2.51,
+      "hold": 0.35,
+      "duration": 2.86
+    },
+    {
+      "id": "s10",
+      "audio": "s10.wav",
+      "start": 36.17,
+      "speech": 3.58,
+      "hold": 0.45,
+      "duration": 4.03
+    },
+    {
+      "id": "s11",
+      "audio": "s11.wav",
+      "start": 40.2,
+      "speech": 3.09,
+      "hold": 0.45,
+      "duration": 3.54
+    },
+    {
+      "id": "s12",
+      "audio": "s12.wav",
+      "start": 43.74,
+      "speech": 3.02,
+      "hold": 1.0,
+      "duration": 4.02
+    }
+  ]
+}
