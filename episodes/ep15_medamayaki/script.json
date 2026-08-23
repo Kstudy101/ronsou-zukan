@@ -1,0 +1,330 @@
+{
+  "id": "ep15_medamayaki",
+  "series": "ニッポン論争図鑑",
+  "episode": 15,
+  "topic_ja": "目玉焼きに何をかけるか",
+  "source": "キッコーマン「目玉焼きにかける調味料」調査 2024年7月 n=2,737（複数回答）",
+  "expected_comments": [
+    "ソース派が22%もいるの意外",
+    "関西だけどうちはソースやで",
+    "何もかけない6%が一番謎"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "目玉焼き",
+      "pronunciation": "メダマヤキ",
+      "accent_type": 0
+    },
+    {
+      "surface": "調味料",
+      "pronunciation": "チョウミリョウ",
+      "accent_type": 3
+    },
+    {
+      "surface": "傾向",
+      "pronunciation": "ケイコウ",
+      "accent_type": 0
+    }
+  ],
+  "youtube": {
+    "title": "【2,737人調査】目玉焼きにしょうゆをかけない人が39％いた",
+    "description": "目玉焼きに何をかけますか。キッコーマンの調査（2024年7月、2,737人、複数回答）です。\n\nしょうゆ61％／塩43％／こしょう35％／ソース22％／何もかけない6％\n\n1位はしょうゆですが、裏を返せば39％はしょうゆをかけていません。\n地域で見ると北海道・東北はしょうゆが70％超、関西は50％を切ります。\nそしてこの傾向、2001年の調査とほぼ同じでした。23年間変わっていません。\n\nあなたは何をかけますか。\n\n出典：キッコーマン「目玉焼きにかける調味料」調査（2024年7月実施、n=2,737、複数回答／2001年5月の先行調査 n=2,933 との比較）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#目玉焼き #しょうゆ #地域差 #雑学 #論争図鑑",
+    "tags": [
+      "目玉焼き",
+      "しょうゆ",
+      "調味料",
+      "地域差",
+      "キッコーマン",
+      "朝食",
+      "雑学",
+      "豆知識",
+      "論争",
+      "日本"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 100,
+    "tsukkomi_size": 50,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "mode": "delta",
+    "separator": "vs",
+    "headline": "23年間ずっと同じ",
+    "sub": "目玉焼きのしょうゆ率",
+    "before_label": "関西",
+    "before": "50%未満",
+    "after_label": "北海道・東北",
+    "after": "70%超"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "目玉焼きに、何をかける？",
+      "visual": {
+        "type": "choice",
+        "a_label": "しょうゆ",
+        "b_label": "塩",
+        "center": "?"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s02",
+      "ja": "2737人に聞いた調査があるのだ",
+      "visual": {
+        "type": "number",
+        "value": "2,737",
+        "unit": "人",
+        "label": "回答者 複数回答",
+        "side": "a",
+        "source": "キッコーマン 目玉焼きにかける調味料 調査 2024年7月"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s03",
+      "ja": "1位はしょうゆ。61パーセント",
+      "visual": {
+        "type": "ranking",
+        "focus": 1,
+        "unit": "%",
+        "source": "キッコーマン 2024年7月 n=2,737 複数回答",
+        "rows": [
+          {
+            "label": "しょうゆ",
+            "value": 61
+          },
+          {
+            "label": "塩",
+            "value": 43
+          },
+          {
+            "label": "こしょう",
+            "value": 35
+          },
+          {
+            "label": "ソース",
+            "value": 22
+          },
+          {
+            "label": "何もかけない",
+            "value": 6
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s04",
+      "ja": "裏を返すと、39パーセントはかけていない",
+      "tsukkomi": "けっこう多い",
+      "visual": {
+        "type": "number",
+        "value": "39",
+        "unit": "%",
+        "label": "しょうゆをかけない人",
+        "side": "b",
+        "source": "キッコーマン 2024年7月 n=2,737 より算出"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s05",
+      "ja": "2位が塩で43パーセント",
+      "visual": {
+        "type": "ranking",
+        "focus": 2,
+        "unit": "%",
+        "source": "キッコーマン 2024年7月 n=2,737 複数回答",
+        "rows": [
+          {
+            "label": "しょうゆ",
+            "value": 61
+          },
+          {
+            "label": "塩",
+            "value": 43
+          },
+          {
+            "label": "こしょう",
+            "value": 35
+          },
+          {
+            "label": "ソース",
+            "value": 22
+          },
+          {
+            "label": "何もかけない",
+            "value": 6
+          }
+        ]
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s06",
+      "ja": "ソース派も22パーセントいるのだ",
+      "visual": {
+        "type": "ranking",
+        "focus": 4,
+        "unit": "%",
+        "source": "キッコーマン 2024年7月 n=2,737 複数回答",
+        "rows": [
+          {
+            "label": "しょうゆ",
+            "value": 61
+          },
+          {
+            "label": "塩",
+            "value": 43
+          },
+          {
+            "label": "こしょう",
+            "value": 35
+          },
+          {
+            "label": "ソース",
+            "value": 22
+          },
+          {
+            "label": "何もかけない",
+            "value": 6
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "何もかけない人も6パーセント",
+      "tsukkomi": "そのまま",
+      "visual": {
+        "type": "ranking",
+        "focus": 5,
+        "unit": "%",
+        "source": "キッコーマン 2024年7月 n=2,737 複数回答",
+        "rows": [
+          {
+            "label": "しょうゆ",
+            "value": 61
+          },
+          {
+            "label": "塩",
+            "value": 43
+          },
+          {
+            "label": "こしょう",
+            "value": 35
+          },
+          {
+            "label": "ソース",
+            "value": 22
+          },
+          {
+            "label": "何もかけない",
+            "value": 6
+          }
+        ]
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s08",
+      "ja": "でも本題は、地域差なのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "北海道・東北",
+        "b_label": "関西",
+        "center": "?"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s09",
+      "ja": "北海道と東北は、しょうゆが70パーセント超",
+      "visual": {
+        "type": "number",
+        "value": "70",
+        "unit": "%超",
+        "label": "北海道・東北 しょうゆ",
+        "side": "a",
+        "source": "キッコーマン 2024年7月 地域別"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s10",
+      "ja": "関西は50パーセントを切るのだ",
+      "visual": {
+        "type": "number",
+        "value": "50",
+        "unit": "%未満",
+        "label": "関西 しょうゆ",
+        "side": "b",
+        "source": "キッコーマン 2024年7月 地域別"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "そしてこの傾向、23年前と同じなのだ",
+      "tsukkomi": "変わってない",
+      "visual": {
+        "type": "number",
+        "value": "23",
+        "unit": "年間",
+        "label": "同じ地域傾向が続く",
+        "side": "a",
+        "source": "キッコーマン 2001年5月 n=2,933 と 2024年7月 n=2,737 の比較"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s12",
+      "ja": "2001年の調査でも、同じ地域が同じ答えだった",
+      "visual": {
+        "type": "choice",
+        "a_label": "2001年",
+        "b_label": "2024年",
+        "center": "="
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたは何をかける？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "しょうゆ派",
+        "b_label": "それ以外"
+      },
+      "hold": 1.0
+    }
+  ]
+}
