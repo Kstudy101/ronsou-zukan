@@ -77,15 +77,25 @@ def build_graphic(episode_id: str, out_name: str = "thumbnail.jpg") -> Path:
     if spec.get("mode") == "delta":
         # 비율이 아니라 전후 변화를 보여줄 때. 대립 막대로 그리면 두 숫자가
         # 한 덩어리의 몫처럼 보여 오해를 부르므로 화살표로 잇는다.
+        # 화살표는 「전후 변화」를 뜻한다. 두 지역·두 집단을 견주는 것뿐이라면
+        # separator 를 vs 로 두어야 한다. 안 그러면 A가 B로 변한 것처럼 읽힌다.
+        sep = spec.get("separator", "→")
         big = load_font(face, 132, "Black")
         lab = load_font(face, 40, "Medium")
+        # 자릿수가 많으면 가운데 기호와 부딪힌다. 겹치지 않을 때까지 줄인다.
+        size = 132
+        while size > 70 and max(draw.textlength(spec["before"], font=big),
+                                draw.textlength(spec["after"], font=big)) > W * 0.38:
+            size -= 6
+            big = load_font(face, size, "Black")
         y = 500
-        draw.text((W * 0.27, y), spec["before"], font=big, fill=B_COLOR, anchor="mm",
+        draw.text((W * 0.26, y), spec["before"], font=big, fill=B_COLOR, anchor="mm",
                   stroke_width=9, stroke_fill=(0, 0, 0, 220))
-        draw.text((W * 0.27, y + 108), spec["before_label"], font=lab,
+        draw.text((W * 0.26, y + 108), spec["before_label"], font=lab,
                   fill=DIM, anchor="mm")
-        draw.text((W * 0.50, y), "→", font=big, fill=INK, anchor="mm")
-        draw.text((W * 0.73, y), spec["after"], font=big, fill=A_COLOR, anchor="mm",
+        draw.text((W * 0.50, y), sep, font=load_font(face, 96, "Black"),
+                  fill=INK, anchor="mm")
+        draw.text((W * 0.74, y), spec["after"], font=big, fill=A_COLOR, anchor="mm",
                   stroke_width=9, stroke_fill=(0, 0, 0, 220))
         draw.text((W * 0.73, y + 108), spec["after_label"], font=lab,
                   fill=DIM, anchor="mm")

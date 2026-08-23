@@ -261,8 +261,16 @@ def choice(design: dict, spec: dict) -> Image.Image:
                   fill=color, anchor="mm")
 
     draw = ImageDraw.Draw(canvas)
-    draw.text((W / 2, y0 + box_h / 2), spec.get("center", "?"), font=font["big"],
-              fill=INK, anchor="mm")
+    center = spec.get("center", "?")
+    # 상자 사이 틈은 기호 한두 글자용이다. 「どん兵衛」처럼 단어가 오면
+    # 양쪽 라벨을 덮어 버리므로, 그때는 상자 위에 제목처럼 얹는다.
+    # 글자 수가 아니라 실제 폭으로 판단한다. 「vs」는 두 글자여도 좁고
+    # 「雑煮」는 두 글자여도 넓어서, 글자 수로 재면 후자가 라벨을 덮는다.
+    if draw.textlength(center, font=font["big"]) <= gap * 3:
+        draw.text((W / 2, y0 + box_h / 2), center, font=font["big"],
+                  fill=INK, anchor="mm")
+    else:
+        draw.text((W / 2, y0 - 38), center, font=font["mid"], fill=INK, anchor="ms")
     return canvas.convert("RGB")
 
 

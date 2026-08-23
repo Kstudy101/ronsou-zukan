@@ -1,0 +1,118 @@
+{
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speaker": 3,
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "total": 46.96,
+  "scenes": [
+    {
+      "id": "s01",
+      "audio": "s01.wav",
+      "start": 0.0,
+      "speech": 3.4,
+      "hold": 0.3,
+      "duration": 3.7
+    },
+    {
+      "id": "s02",
+      "audio": "s02.wav",
+      "start": 3.7,
+      "speech": 2.4,
+      "hold": 0.45,
+      "duration": 2.85
+    },
+    {
+      "id": "s03",
+      "audio": "s03.wav",
+      "start": 6.55,
+      "speech": 3.86,
+      "hold": 0.4,
+      "duration": 4.26
+    },
+    {
+      "id": "s04",
+      "audio": "s04.wav",
+      "start": 10.81,
+      "speech": 2.12,
+      "hold": 0.35,
+      "duration": 2.47
+    },
+    {
+      "id": "s05",
+      "audio": "s05.wav",
+      "start": 13.28,
+      "speech": 2.9,
+      "hold": 0.4,
+      "duration": 3.3
+    },
+    {
+      "id": "s06",
+      "audio": "s06.wav",
+      "start": 16.58,
+      "speech": 3.3,
+      "hold": 0.45,
+      "duration": 3.75
+    },
+    {
+      "id": "s07",
+      "audio": "s07.wav",
+      "start": 20.33,
+      "speech": 2.03,
+      "hold": 0.35,
+      "duration": 2.38
+    },
+    {
+      "id": "s08",
+      "audio": "s08.wav",
+      "start": 22.71,
+      "speech": 2.81,
+      "hold": 0.35,
+      "duration": 3.16
+    },
+    {
+      "id": "s09",
+      "audio": "s09.wav",
+      "start": 25.87,
+      "speech": 4.66,
+      "hold": 0.5,
+      "duration": 5.16
+    },
+    {
+      "id": "s10",
+      "audio": "s10.wav",
+      "start": 31.03,
+      "speech": 4.13,
+      "hold": 0.4,
+      "duration": 4.53
+    },
+    {
+      "id": "s11",
+      "audio": "s11.wav",
+      "start": 35.56,
+      "speech": 3.41,
+      "hold": 0.4,
+      "duration": 3.81
+    },
+    {
+      "id": "s12",
+      "audio": "s12.wav",
+      "start": 39.37,
+      "speech": 2.88,
+      "hold": 0.5,
+      "duration": 3.38
+    },
+    {
+      "id": "s13",
+      "audio": "s13.wav",
+      "start": 42.75,
+      "speech": 3.21,
+      "hold": 1.0,
+      "duration": 4.21
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "id": "ep12_touzai",
+  "series": "ニッポン論争図鑑",
+  "episode": 12,
+  "topic_ja": "東西の境界線",
+  "source": "総務省 家計調査 品目別都道府県庁所在市ランキング ほか",
+  "expected_comments": [
+    "岐阜だけど確かに両方ある",
+    "うちは関西だけど角餅です",
+    "どん兵衛の開発チーム本気すぎて草"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "関ケ原",
+      "pronunciation": "セキガハラ",
+      "accent_type": 3
+    },
+    {
+      "surface": "雑煮",
+      "pronunciation": "ゾウニ",
+      "accent_type": 0
+    },
+    {
+      "surface": "角餅",
+      "pronunciation": "カクモチ",
+      "accent_type": 0
+    },
+    {
+      "surface": "丸餅",
+      "pronunciation": "マルモチ",
+      "accent_type": 0
+    },
+    {
+      "surface": "肉じゃが",
+      "pronunciation": "ニクジャガ",
+      "accent_type": 0
+    },
+    {
+      "surface": "稲荷寿司",
+      "pronunciation": "イナリズシ",
+      "accent_type": 3
+    }
+  ],
+  "youtube": {
+    "title": "【東西の境界線】日本は岐阜県・関ケ原で二つに割れている",
+    "description": "お雑煮の餅、肉じゃがの肉、稲荷寿司の形。どれも岐阜県の関ケ原あたりで東と西に分かれます。\n日清のどん兵衛は、開発チームが新幹線の駅ごとにうどんを食べ比べて境界を決めたそうです。\n納豆の消費額は福島7,830円に対して和歌山2,627円。約3倍の差があります。\n\nあなたはどっち側ですか。コメントで教えてください。\n\n出典：総務省 家計調査（品目別 都道府県庁所在市ランキング）／日清食品「どん兵衛」東西だし公式サイト／引越し侍 全国お雑煮調査／オトナンサー・日本経済新聞（いなり寿司の形）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#東西の境界線 #関ケ原 #納豆 #どん兵衛 #雑学 #論争図鑑",
+    "tags": [
+      "東西の境界線",
+      "関ケ原",
+      "納豆",
+      "どん兵衛",
+      "お雑煮",
+      "肉じゃが",
+      "いなり寿司",
+      "地域差",
+      "雑学",
+      "論争"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 57.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 104,
+    "tsukkomi_size": 52,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "mode": "delta",
+    "headline": "日本を割る線",
+    "sub": "納豆の消費額 東西差",
+    "before_label": "和歌山（西）",
+    "before": "2,627円",
+    "after_label": "福島（東）",
+    "after": "7,830円",
+    "separator": "vs"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "日本は、ある一点で東西に割れるのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "東日本",
+        "b_label": "西日本"
+      },
+      "hold": 0.3
+    },
+    {
+      "id": "s02",
+      "ja": "岐阜県、関ケ原のあたり",
+      "tsukkomi": "あの関ケ原",
+      "visual": {
+        "type": "choice",
+        "a_label": "東日本",
+        "b_label": "西日本",
+        "center": "関ケ原"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s03",
+      "ja": "まずお雑煮の餅。東は四角、西は丸",
+      "visual": {
+        "type": "choice",
+        "a_label": "角餅",
+        "b_label": "丸餅",
+        "center": "雑煮"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s04",
+      "ja": "肉じゃがの肉も分かれるのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "豚肉",
+        "b_label": "牛肉",
+        "center": "肉じゃが"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s05",
+      "ja": "近畿は93パーセントが牛肉",
+      "visual": {
+        "type": "number",
+        "value": "93",
+        "unit": "%",
+        "label": "近畿 牛肉",
+        "side": "b",
+        "source": "Pouch 肉じゃがの肉 全国調査"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s06",
+      "ja": "稲荷寿司は、東が四角で西が三角",
+      "tsukkomi": "形まで",
+      "visual": {
+        "type": "choice",
+        "a_label": "俵型",
+        "b_label": "三角",
+        "center": "いなり"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s07",
+      "ja": "極めつけがどん兵衛なのだ",
+      "visual": {
+        "type": "choice",
+        "a_label": "E",
+        "b_label": "W",
+        "center": "どん兵衛"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s08",
+      "ja": "パッケージにEとWの表示がある",
+      "visual": {
+        "type": "choice",
+        "a_label": "East",
+        "b_label": "West",
+        "center": "どん兵衛"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s09",
+      "ja": "開発チームが新幹線の駅ごとにうどんを食べ比べて決めたのだ",
+      "tsukkomi": "本気すぎ",
+      "visual": {
+        "type": "choice",
+        "a_label": "かつおだし",
+        "b_label": "こんぶだし",
+        "center": "どん兵衛"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s10",
+      "ja": "そして納豆。福島は年7830円",
+      "visual": {
+        "type": "number",
+        "value": "7,830",
+        "unit": "円",
+        "label": "福島 納豆 年間支出",
+        "side": "a",
+        "source": "総務省 家計調査 品目別 都道府県庁所在市ランキング"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s11",
+      "ja": "和歌山は2627円しかないのだ",
+      "visual": {
+        "type": "number",
+        "value": "2,627",
+        "unit": "円",
+        "label": "和歌山 納豆 年間支出",
+        "side": "b",
+        "source": "総務省 家計調査 品目別 都道府県庁所在市ランキング"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s12",
+      "ja": "同じ国で、約3倍の差なのだ",
+      "tsukkomi": "食べてなさすぎ",
+      "visual": {
+        "type": "number",
+        "value": "3",
+        "unit": "倍",
+        "label": "東西の納豆消費差",
+        "side": "a",
+        "source": "総務省 家計調査より算出"
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s13",
+      "ja": "あなたはどっち側？教えてほしいのだ",
+      "visual": {
+        "type": "cta",
+        "a_label": "東日本",
+        "b_label": "西日本"
+      },
+      "hold": 1.0
+    }
+  ]
+}
