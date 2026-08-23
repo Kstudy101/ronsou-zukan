@@ -1,0 +1,109 @@
+{
+  "id": "ep14_yobikata",
+  "series": "ニッポン論争図鑑",
+  "episode": 14,
+  "topic_ja": "東西の境界線 呼び方編",
+  "source": "ウェザーニュース／オトナンサー／at home VOX／マイナビ 各調査",
+
+  "expected_comments": [
+    "関西だけど肉まんって言うわ",
+    "ぶたじる派の存在を今知った",
+    "回転焼きって言うのは九州だけだったのか"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "肉まん", "pronunciation": "ニクマン", "accent_type": 0},
+    {"surface": "豚まん", "pronunciation": "ブタマン", "accent_type": 0},
+    {"surface": "豚汁", "pronunciation": "トンジル", "accent_type": 0},
+    {"surface": "今川焼", "pronunciation": "イマガワヤキ", "accent_type": 5},
+    {"surface": "大判焼き", "pronunciation": "オオバンヤキ", "accent_type": 4},
+    {"surface": "回転焼き", "pronunciation": "カイテンヤキ", "accent_type": 4},
+    {"surface": "近畿", "pronunciation": "キンキ", "accent_type": 1}
+  ],
+
+  "youtube": {
+    "title": "【呼び方の境界線】「マクド」と言うのは11府県だけだった",
+    "description": "同じものなのに、住んでいる場所で名前が変わります。\n\n肉まん83％ 対 豚まん17％。ただし近畿だけは豚まんが67％で逆転します。\nとんじる84.3％ 対 ぶたじる15.7％。九州・沖縄では46％がぶたじる。\n「マクド」と呼ぶのは大阪・京都・兵庫・奈良・和歌山など11府県ほど。\n今川焼49％、大判焼き30％、回転焼き16％。九州は回転焼きで全県制覇。\n\nあなたはどう呼びますか。\n\n出典：ウェザーニュース（肉まん・豚まん調査）／オトナンサー 全国700人調査（豚汁の呼び方）／at home VOX・Jタウン研究所（マック・マクド境界線）／マイナビ・ニチレイフーズ勢力図マップ（今川焼の呼び方）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#呼び方 #方言 #地域差 #東西の境界線 #雑学 #論争図鑑",
+    "tags": ["呼び方", "方言", "地域差", "肉まん", "豚まん", "豚汁", "マクド", "今川焼", "雑学", "論争"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "headline": "マクドは11府県だけ",
+    "sub": "呼び方の境界線",
+    "a_label": "肉まん", "a_value": 83, "b_label": "豚まん", "b_value": 17
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "同じものなのに、名前が変わるのだ",
+      "visual": {"type": "choice", "a_label": "東日本", "b_label": "西日本"}, "hold": 0.3 },
+
+    { "id": "s02", "ja": "まず、肉まんか豚まんか",
+      "visual": {"type": "choice", "a_label": "肉まん", "b_label": "豚まん", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s03", "ja": "全国では83対17で肉まんなのだ",
+      "visual": {"type": "versus", "a_label": "肉まん", "a_value": 83, "b_label": "豚まん", "b_value": 17,
+                 "unit": "%", "decimals": 0,
+                 "source": "ウェザーニュース 肉まん・豚まん調査"}, "hold": 0.4 },
+
+    { "id": "s04", "ja": "ところが近畿だけ、豚まんが67パーセント",
+      "tsukkomi": "逆転してる",
+      "visual": {"type": "number", "value": "67", "unit": "%", "label": "近畿 豚まん", "side": "b",
+                 "source": "ウェザーニュース 肉まん・豚まん調査"}, "hold": 0.45 },
+
+    { "id": "s05", "ja": "次は豚汁。とんじる？ぶたじる？",
+      "visual": {"type": "choice", "a_label": "とんじる", "b_label": "ぶたじる", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s06", "ja": "全国は84対16でとんじる",
+      "visual": {"type": "versus", "a_label": "とんじる", "a_value": 84.3, "b_label": "ぶたじる", "b_value": 15.7,
+                 "unit": "%", "decimals": 1,
+                 "source": "オトナンサー 全国700人調査"}, "hold": 0.4 },
+
+    { "id": "s07", "ja": "でも九州と沖縄は46パーセントがぶたじる",
+      "visual": {"type": "number", "value": "46", "unit": "%", "label": "九州・沖縄 ぶたじる", "side": "b",
+                 "source": "オトナンサー 全国700人調査"}, "hold": 0.45 },
+
+    { "id": "s08", "ja": "そしてマクド。こう呼ぶのは11府県ほど",
+      "tsukkomi": "少ない",
+      "visual": {"type": "number", "value": "11", "unit": "府県", "label": "マクドと呼ぶ地域", "side": "b",
+                 "source": "at home VOX・Jタウン研究所 マック／マクド境界線調査"}, "hold": 0.5 },
+
+    { "id": "s09", "ja": "最後は、これを何と呼ぶかなのだ",
+      "visual": {"type": "choice", "a_label": "今川焼", "b_label": "回転焼き", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s10", "ja": "今川焼が49、大判焼きが30、回転焼きが16",
+      "visual": {"type": "ranking", "unit": "%",
+                 "source": "マイナビ 今川焼の呼び方調査",
+                 "rows": [{"label": "今川焼", "value": 49},
+                          {"label": "大判焼き", "value": 30},
+                          {"label": "回転焼き", "value": 16}]}, "hold": 0.45 },
+
+    { "id": "s11", "ja": "九州は回転焼きで全県制覇なのだ",
+      "tsukkomi": "きれいに分かれる",
+      "visual": {"type": "ranking", "focus": 3, "unit": "%",
+                 "source": "ニチレイフーズ 呼び方の勢力図マップ",
+                 "rows": [{"label": "今川焼", "value": 49},
+                          {"label": "大判焼き", "value": 30},
+                          {"label": "回転焼き", "value": 16}]}, "hold": 0.45 },
+
+    { "id": "s12", "ja": "自分の呼び方が標準だと思っているのだ",
+      "visual": {"type": "choice", "a_label": "うちが標準", "b_label": "うちが標準", "center": "="}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたはどう呼ぶ？教えてほしいのだ",
+      "visual": {"type": "cta", "a_label": "東日本の呼び方", "b_label": "西日本の呼び方"}, "hold": 1.0 }
+  ]
+}
