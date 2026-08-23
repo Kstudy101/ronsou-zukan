@@ -1,0 +1,110 @@
+{
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speaker": 3,
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "total": 39.6,
+  "scenes": [
+    {
+      "id": "s01",
+      "audio": "s01.wav",
+      "start": 0.0,
+      "speech": 3.92,
+      "hold": 0.35,
+      "duration": 4.27
+    },
+    {
+      "id": "s02",
+      "audio": "s02.wav",
+      "start": 4.27,
+      "speech": 1.8,
+      "hold": 0.45,
+      "duration": 2.25
+    },
+    {
+      "id": "s03",
+      "audio": "s03.wav",
+      "start": 6.52,
+      "speech": 3.86,
+      "hold": 0.4,
+      "duration": 4.26
+    },
+    {
+      "id": "s04",
+      "audio": "s04.wav",
+      "start": 10.78,
+      "speech": 2.79,
+      "hold": 0.45,
+      "duration": 3.24
+    },
+    {
+      "id": "s05",
+      "audio": "s05.wav",
+      "start": 14.02,
+      "speech": 2.56,
+      "hold": 0.4,
+      "duration": 2.96
+    },
+    {
+      "id": "s06",
+      "audio": "s06.wav",
+      "start": 16.98,
+      "speech": 4.21,
+      "hold": 0.4,
+      "duration": 4.61
+    },
+    {
+      "id": "s07",
+      "audio": "s07.wav",
+      "start": 21.59,
+      "speech": 2.31,
+      "hold": 0.4,
+      "duration": 2.71
+    },
+    {
+      "id": "s08",
+      "audio": "s08.wav",
+      "start": 24.3,
+      "speech": 2.21,
+      "hold": 0.5,
+      "duration": 2.71
+    },
+    {
+      "id": "s09",
+      "audio": "s09.wav",
+      "start": 27.01,
+      "speech": 2.58,
+      "hold": 0.4,
+      "duration": 2.98
+    },
+    {
+      "id": "s10",
+      "audio": "s10.wav",
+      "start": 29.99,
+      "speech": 2.51,
+      "hold": 0.45,
+      "duration": 2.96
+    },
+    {
+      "id": "s11",
+      "audio": "s11.wav",
+      "start": 32.95,
+      "speech": 2.73,
+      "hold": 0.4,
+      "duration": 3.13
+    },
+    {
+      "id": "s12",
+      "audio": "s12.wav",
+      "start": 36.08,
+      "speech": 2.52,
+      "hold": 1.0,
+      "duration": 3.52
+    }
+  ]
+}

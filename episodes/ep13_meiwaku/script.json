@@ -1,0 +1,381 @@
+{
+  "id": "ep13_meiwaku",
+  "series": "ニッポン論争図鑑",
+  "episode": 13,
+  "topic_ja": "電車内の迷惑行為",
+  "source": "日本民営鉄道協会 2025年度 駅と電車内の迷惑行為ランキング (回答5,202人・最大3つ選択)",
+  "expected_comments": [
+    "咳が1位なのはコロナ以降だろうな",
+    "香りが6位なのが意外。もっと上だと思ってた",
+    "座り方は本当に許せない"
+  ],
+  "voice": {
+    "provider": "voicevox",
+    "character": "ずんだもん",
+    "style": "ノーマル",
+    "speed": 1.08,
+    "intonation": 1.15,
+    "pitch": 0.0
+  },
+  "dictionary": [
+    {
+      "surface": "迷惑行為",
+      "pronunciation": "メイワクコウイ",
+      "accent_type": 5
+    },
+    {
+      "surface": "座り方",
+      "pronunciation": "スワリカタ",
+      "accent_type": 4
+    },
+    {
+      "surface": "民営鉄道協会",
+      "pronunciation": "ミンエイテツドウキョウカイ",
+      "accent_type": 8
+    }
+  ],
+  "youtube": {
+    "title": "【5,202人調査】電車で一番迷惑な行為、スマホじゃなかった",
+    "description": "日本民営鉄道協会が毎年やっている「駅と電車内の迷惑行為ランキング」。2025年度の1位は、スマホでも大声でもありませんでした。\n\n1位 周囲に配慮しない咳やくしゃみ 34.7％\n2位 座席の座り方 31.9％\n3位 大声での会話 30.2％\n4位 ドア付近から動かない 27.6％\n5位 スマートフォンの使い方 21.6％\n6位 強いにおい 21.5％\n\nあなたが一番許せないのは何位でしたか。\n\n出典：日本民営鉄道協会「2025年度 駅と電車内の迷惑行為ランキング」（調査2025年10月1日〜11月30日、回答5,202人、最大3つまで複数選択）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#電車 #マナー #迷惑行為 #ランキング #雑学 #論争図鑑",
+    "tags": [
+      "電車",
+      "マナー",
+      "迷惑行為",
+      "ランキング",
+      "民営鉄道協会",
+      "通勤",
+      "スマホ",
+      "におい",
+      "雑学",
+      "論争"
+    ],
+    "category_id": "27",
+    "privacy_status": "private",
+    "made_for_kids": false,
+    "language": "ja"
+  },
+  "design": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "subtitle_mode": "ja",
+    "subtitle_center_y_pct": 62.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf",
+    "ja_weight": "Black",
+    "main_size": 96,
+    "tsukkomi_size": 50,
+    "main_color": "#FFFFFF",
+    "accent_color": "#FFD24A",
+    "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright",
+    "bgm_gain_db": -19.0,
+    "transition": 0.4
+  },
+  "thumbnail": {
+    "type": "graphic",
+    "mode": "delta",
+    "separator": "vs",
+    "headline": "1位はスマホじゃない",
+    "sub": "電車内の迷惑行為 5,202人調査",
+    "before_label": "5位 スマホ",
+    "before": "21.6%",
+    "after_label": "1位 咳・くしゃみ",
+    "after": "34.7%"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "ja": "電車で一番迷惑な行為って、何だと思う？",
+      "visual": {
+        "type": "choice",
+        "a_label": "スマホ",
+        "b_label": "大声"
+      },
+      "hold": 0.35
+    },
+    {
+      "id": "s02",
+      "ja": "どっちも1位じゃないのだ",
+      "tsukkomi": "えっ",
+      "visual": {
+        "type": "choice",
+        "a_label": "スマホ",
+        "b_label": "大声",
+        "center": "≠"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s03",
+      "ja": "鉄道会社の団体が5202人に聞いたのだ",
+      "visual": {
+        "type": "number",
+        "value": "5,202",
+        "unit": "人",
+        "label": "回答者",
+        "side": "a",
+        "source": "日本民営鉄道協会 2025年度調査"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s04",
+      "ja": "1位は、配慮のない咳やくしゃみ",
+      "visual": {
+        "type": "ranking",
+        "focus": 1,
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s05",
+      "ja": "34.7パーセントなのだ",
+      "visual": {
+        "type": "number",
+        "value": "34.7",
+        "unit": "%",
+        "label": "1位 咳・くしゃみ",
+        "side": "a",
+        "source": "日本民営鉄道協会 2025年度調査"
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s06",
+      "ja": "2位は座席の座り方。31.9パーセント",
+      "visual": {
+        "type": "ranking",
+        "focus": 2,
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s07",
+      "ja": "3位でようやく大声の会話",
+      "visual": {
+        "type": "ranking",
+        "focus": 3,
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s08",
+      "ja": "そしてスマホは、5位なのだ",
+      "tsukkomi": "意外と低い",
+      "visual": {
+        "type": "ranking",
+        "focus": 5,
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.5
+    },
+    {
+      "id": "s09",
+      "ja": "すぐ下の6位が、強いにおい",
+      "visual": {
+        "type": "ranking",
+        "focus": 6,
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s10",
+      "ja": "香水や柔軟剤のにおいなのだ",
+      "visual": {
+        "type": "number",
+        "value": "21.5",
+        "unit": "%",
+        "label": "6位 強いにおい",
+        "side": "b",
+        "source": "日本民営鉄道協会 2025年度調査"
+      },
+      "hold": 0.45
+    },
+    {
+      "id": "s11",
+      "ja": "この調査、毎年やっているのだ",
+      "visual": {
+        "type": "ranking",
+        "unit": "%",
+        "source": "日本民営鉄道協会 2025年度 迷惑行為ランキング",
+        "rows": [
+          {
+            "label": "咳・くしゃみ",
+            "value": 34.7
+          },
+          {
+            "label": "座席の座り方",
+            "value": 31.9
+          },
+          {
+            "label": "大声での会話",
+            "value": 30.2
+          },
+          {
+            "label": "ドア付近から動かない",
+            "value": 27.6
+          },
+          {
+            "label": "スマホの使い方",
+            "value": 21.6
+          },
+          {
+            "label": "強いにおい",
+            "value": 21.5
+          }
+        ]
+      },
+      "hold": 0.4
+    },
+    {
+      "id": "s12",
+      "ja": "あなたの1位は、何位だった？",
+      "tsukkomi": "入ってた？",
+      "visual": {
+        "type": "cta",
+        "a_label": "1位に同意",
+        "b_label": "別のがある"
+      },
+      "hold": 1.0
+    }
+  ]
+}

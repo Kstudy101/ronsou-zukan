@@ -536,7 +536,9 @@ def render(episode_id: str, out_name: str = "video.mp4") -> Path:
                 # 수치를 그리는 도해는 출처를 반드시 달게 한다. 대립 막대는
                 # 실제 비율 그대로 그려야 신뢰가 서는데, 근거 없는 숫자가
                 # 하나라도 섞이면 채널 전체가 무너지기 때문이다.
-                if spec.get("type") in {"versus", "number", "split"}                         and not spec.get("source"):
+                if spec.get("type") in {"versus", "number", "split",
+                                        "trend", "ranking"} \
+                        and not spec.get("source"):
                     raise RuntimeError(
                         f"{scene['id']}: 수치 도해({spec['type']})에 source 가 없다. "
                         f"출처를 적을 수 없는 숫자는 화면에 올리지 않는다."

@@ -239,6 +239,46 @@ def trend(design: dict, spec: dict) -> Image.Image:
     return canvas.convert("RGB")
 
 
+def ranking(design: dict, spec: dict) -> Image.Image:
+    """순위표. 지금 말하는 항목 하나만 밝히고 나머지는 눌러 둔다.
+
+    랭킹은 한 화면에 여러 줄이 뜨는데, 나레이션은 한 번에 한 줄만 말한다.
+    전부 같은 밝기로 두면 어디를 보라는 건지 알 수 없다.
+    """
+    W, H = design["width"], design["height"]
+    canvas = _ground((W, H)).convert("RGBA")
+    font = _fonts(design)
+    draw = ImageDraw.Draw(canvas)
+
+    rows = spec["rows"]                    # [{"label": "...", "value": 34.7}, ...]
+    focus = spec.get("focus")              # 밝힐 순위(1부터). 없으면 전부 보통
+    unit = spec.get("unit", "%")
+    # 켄번스가 플레이트를 1.1배로 잡았다가 당기므로, 도해 좌표는 화면에서
+    # 최대 60px 정도 위로 올라온다. 머리말(≈195px)과 겹치지 않게 여유를 둔다.
+    top = int(H * 0.19)
+    row_h, bar_h = 106, 30
+    peak = max(float(r["value"]) for r in rows) or 1.0
+    left, right = int(W * 0.09), int(W * 0.91)
+
+    for index, row in enumerate(rows, start=1):
+        y = top + (index - 1) * row_h
+        lit = (focus is None) or (index == focus)
+        color = (A_COLOR if index % 2 else B_COLOR) if lit else (58, 68, 84)
+        text_color = INK if lit else (96, 106, 122)
+
+        draw.text((left, y), f"{index}", font=font["mid"],
+                  fill=color if lit else (78, 88, 104), anchor="ls")
+        draw.text((left + 62, y), row["label"], font=font["small"],
+                  fill=text_color, anchor="ls")
+        draw.text((right, y), f"{float(row['value']):g}{unit}", font=font["small"],
+                  fill=color if lit else (96, 106, 122), anchor="rs")
+
+        span = (right - left) * float(row["value"]) / peak
+        draw.rounded_rectangle([left, y + 16, left + span, y + 16 + bar_h],
+                               radius=6, fill=color)
+    return canvas.convert("RGB")
+
+
 def choice(design: dict, spec: dict) -> Image.Image:
     """양자택일을 좌우로 세우고 가운데에 물음표를 둔다. 도입부용."""
     W, H = design["width"], design["height"]
@@ -275,7 +315,8 @@ def choice(design: dict, spec: dict) -> Image.Image:
 
 
 BUILDERS = {"versus": versus, "number": number, "split": split,
-            "cta": cta, "choice": choice, "trend": trend}
+            "cta": cta, "choice": choice, "trend": trend,
+            "ranking": ranking}
 
 
 def build(design: dict, spec: dict) -> Image.Image:
