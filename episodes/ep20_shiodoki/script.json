@@ -1,0 +1,115 @@
+{
+  "id": "ep20_shiodoki",
+  "series": "ニッポン論争図鑑",
+  "episode": 20,
+  "topic_ja": "「潮時」はどっちの意味か",
+  "source": "文化庁「国語に関する世論調査」令和6年度 n=3,498",
+
+  "expected_comments": [
+    "潮時は終わりの意味で使ってた",
+    "役不足は逆に覚えてる人が多い",
+    "辞書の方が現実に合わせるべき"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "潮時", "pronunciation": "シオドキ", "accent_type": 0, "priority": 10},
+    {"surface": "役不足", "pronunciation": "ヤクブソク", "accent_type": 0, "priority": 10},
+    {"surface": "辞書", "pronunciation": "ジショ", "accent_type": 1}
+  ],
+
+  "youtube": {
+    "title": "【意味が入れ替わる瞬間】「潮時」を本来の意味で使う人が41.9％まで減った",
+    "description": "文化庁「国語に関する世論調査」令和6年度（有効回答3,498人、2025年9月26日公表）。\n\n「そろそろ潮時だ」の「潮時」。辞書等で本来の意味とされてきたのは「ちょうどいい時期」ですが、そう答えた人は41.9％。「ものごとの終わり」の46.7％を下回りました。12年前の調査では60.0％だったので、18.1ポイント減っています。\n\n一方で「役不足」は逆方向です。本来の意味「役目が軽すぎること」は45.1％で今も少数派ですが、2002年度の27.6％から増え続け、差は3.8ポイントまで縮みました。\n\n「にやける」はもう決着しています。本来の意味「なよなよしている」は10.5％、「薄笑いを浮かべている」が81.9％です。\n\nそして「潮時」を本来の意味で答えた割合が最も高いのは、70歳以上の51.7％でした。\n\n※2019年度以前は面接法、2020年度以降は郵送法です。過去の調査結果は参考値として扱われています。\n\n出典：文化庁「国語に関する世論調査」令和6年度\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#潮時 #役不足 #にやける #日本語 #文化庁 #雑学 #論争図鑑",
+    "tags": ["潮時", "役不足", "にやける", "慣用句", "日本語", "文化庁", "国語に関する世論調査", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta",
+    "headline": "12年で18ポイント減", "sub": "「潮時」を本来の意味で使う人",
+    "before_label": "2012年度", "before": "60.0%",
+    "after_label": "2024年度", "after": "41.9%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "「そろそろ潮時だ」ってどっちの意味？",
+      "visual": {"type": "choice", "a_label": "いい時期", "b_label": "終わり", "center": "?"}, "hold": 0.4 },
+
+    { "id": "s02", "ja": "終わりの意味が、46.7パーセントで上回るのだ",
+      "visual": {"type": "versus", "a_label": "いい時期", "a_value": 41.9,
+                 "b_label": "終わり", "b_value": 46.7, "unit": "%", "decimals": 1,
+                 "source": "文化庁 国語に関する世論調査 令和6年度 n=3,498"}, "hold": 0.5 },
+
+    { "id": "s03", "ja": "でも辞書の本来の意味は、いい時期の方なのだ",
+      "tsukkomi": "そっち？",
+      "visual": {"type": "number", "value": "41.9", "unit": "%", "label": "本来の意味 ちょうどいい時期", "side": "a",
+                 "source": "文化庁 令和6年度 辞書等で本来の意味とされてきたもの"}, "hold": 0.5 },
+
+    { "id": "s04", "ja": "12年前は、60パーセントだったのだ",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "文化庁 潮時「ちょうどいい時期」 ※2019年度以前は面接法 参考値",
+                 "points": [{"label": "2012", "value": 60.0},
+                            {"label": "2024", "value": 41.9}]}, "hold": 0.5 },
+
+    { "id": "s05", "ja": "12年で18.1ポイント減ったのだ",
+      "visual": {"type": "number", "value": "18.1", "unit": "ポイント", "label": "本来の意味で答えた人の減少", "side": "b",
+                 "source": "文化庁 令和6年度 より算出 ※面接法との比較は参考値"}, "hold": 0.45 },
+
+    { "id": "s06", "ja": "じゃあ「役不足」はどっち？",
+      "visual": {"type": "choice", "a_label": "重すぎる", "b_label": "軽すぎる", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s07", "ja": "こっちも、本来の意味が負けているのだ",
+      "visual": {"type": "versus", "a_label": "重すぎる", "a_value": 48.9,
+                 "b_label": "軽すぎる（本来）", "b_value": 45.1, "unit": "%", "decimals": 1,
+                 "source": "文化庁 令和6年度 役不足 n=3,498"}, "hold": 0.5 },
+
+    { "id": "s08", "ja": "ところが役不足は、本来の意味が増えているのだ",
+      "tsukkomi": "逆？",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "文化庁 役不足「役目が軽すぎる」 ※2019年度以前は面接法 参考値",
+                 "points": [{"label": "2002", "value": 27.6},
+                            {"label": "2006", "value": 40.3},
+                            {"label": "2012", "value": 41.6},
+                            {"label": "2024", "value": 45.1}]}, "hold": 0.55 },
+
+    { "id": "s09", "ja": "差は3.8ポイントまで縮んだのだ",
+      "visual": {"type": "number", "value": "3.8", "unit": "ポイント", "label": "役不足 いまの差", "side": "a",
+                 "source": "文化庁 令和6年度 より算出"}, "hold": 0.45 },
+
+    { "id": "s10", "ja": "もう決着した言葉もあるのだ",
+      "visual": {"type": "versus", "a_label": "なよなよ（本来）", "a_value": 10.5,
+                 "b_label": "薄笑い", "b_value": 81.9, "unit": "%", "decimals": 1,
+                 "source": "文化庁 令和6年度 にやける n=3,498"}, "hold": 0.5 },
+
+    { "id": "s11", "ja": "本来の意味が残っている順に、並べるのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 5,
+                 "source": "文化庁 令和6年度 問16の5語 本来の意味を選んだ割合",
+                 "rows": [{"label": "したり顔", "value": 64.5},
+                          {"label": "付かぬ事", "value": 45.6},
+                          {"label": "役不足", "value": 45.1},
+                          {"label": "潮時", "value": 41.9},
+                          {"label": "にやける", "value": 10.5}]}, "hold": 0.55 },
+
+    { "id": "s12", "ja": "潮時を本来の意味で答えたのは、70歳以上が一番多いのだ",
+      "tsukkomi": "やっぱり",
+      "visual": {"type": "number", "value": "51.7", "unit": "%", "label": "70歳以上 潮時＝いい時期", "side": "a",
+                 "source": "文化庁 令和6年度 潮時 年齢別"}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたの「潮時」はどっち？",
+      "visual": {"type": "cta", "a_label": "ちょうどいい時期", "b_label": "ものごとの終わり"}, "hold": 1.0 }
+  ]
+}
