@@ -1,0 +1,110 @@
+{
+  "id": "ep17_yubune",
+  "series": "ニッポン論争図鑑",
+  "episode": 17,
+  "topic_ja": "夏でも湯船につかるか",
+  "source": "プラネット「お風呂時間に関する意識調査」Vol.151 2021年1月 n=4,000",
+
+  "expected_comments": [
+    "夏はシャワーだけで十分",
+    "夏こそ湯船に入ると汗が引く",
+    "北海道が低いの意外すぎる"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "湯船", "pronunciation": "ユブネ", "accent_type": 0},
+    {"surface": "入浴", "pronunciation": "ニュウヨク", "accent_type": 0},
+    {"surface": "体", "pronunciation": "カラダ", "accent_type": 0},
+    {"surface": "清潔", "pronunciation": "セイケツ", "accent_type": 0}
+  ],
+
+  "youtube": {
+    "title": "【32ポイント減】夏に毎回湯船につかる人は38.4％しかいない",
+    "description": "冬は70.4％が毎回湯船につかります。ところが夏は38.4％。同じ日本人が、季節で入り方を変えています。\n\nもうひとつ意外なのが地域差です。夏に毎回湯船につかる割合は、東北42.3％に対して北海道は24.1％。寒い地域ほどつかる、とはなっていません。その北海道も冬は55.2％まで戻ります。\n\n入浴する理由の1位は「体を清潔に保つため」75.5％。そして入浴中にしていることの1位は「何も考えずにぼーっとする」38.2％でした。\n\nあなたは夏も湯船に入りますか。\n\n出典：プラネット「お風呂時間に関する意識調査」Vol.151（2021年1月19～22日 インターネット調査 n=4,000）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#お風呂 #湯船 #シャワー #夏 #生活習慣 #雑学 #論争図鑑",
+    "tags": ["お風呂", "湯船", "シャワー", "入浴", "夏", "北海道", "東北", "生活習慣", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta",
+    "headline": "夏は32ポイント減", "sub": "毎回湯船につかる人",
+    "before_label": "冬", "before": "70.4%",
+    "after_label": "夏", "after": "38.4%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "夏のお風呂、どっち派？",
+      "visual": {"type": "choice", "a_label": "湯船", "b_label": "シャワー", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s02", "ja": "夏に毎回湯船につかる人は、38.4パーセントなのだ",
+      "visual": {"type": "number", "value": "38.4", "unit": "%", "label": "夏 毎回湯船につかる", "side": "b",
+                 "source": "プラネット お風呂時間に関する意識調査 Vol.151 n=4,000"}, "hold": 0.45 },
+
+    { "id": "s03", "ja": "つまり夏は、6割がつかっていないのだ",
+      "tsukkomi": "そんなに？",
+      "visual": {"type": "versus", "a_label": "毎回つかる", "a_value": 38.4,
+                 "b_label": "そうではない", "b_value": 61.6, "unit": "%", "decimals": 1,
+                 "source": "プラネット Vol.151 夏 n=4,000"}, "hold": 0.45 },
+
+    { "id": "s04", "ja": "ところが冬は、70.4パーセントに戻るのだ",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "プラネット Vol.151 毎回湯船につかる割合 n=4,000",
+                 "points": [{"label": "春", "value": 58.7},
+                            {"label": "夏", "value": 38.4},
+                            {"label": "秋", "value": 58.3},
+                            {"label": "冬", "value": 70.4}]}, "hold": 0.5 },
+
+    { "id": "s05", "ja": "その差、32ポイント",
+      "tsukkomi": "別人？",
+      "visual": {"type": "number", "value": "32.0", "unit": "ポイント", "label": "冬と夏の差", "side": "a",
+                 "source": "プラネット Vol.151 より算出"}, "hold": 0.45 },
+
+    { "id": "s06", "ja": "地域でも割れるのだ",
+      "visual": {"type": "choice", "a_label": "東北", "b_label": "北海道", "center": "夏"}, "hold": 0.35 },
+
+    { "id": "s07", "ja": "東北は、夏でも42.3パーセント",
+      "visual": {"type": "number", "value": "42.3", "unit": "%", "label": "東北 夏", "side": "a",
+                 "source": "プラネット Vol.151 夏に毎回湯船につかる割合"}, "hold": 0.4 },
+
+    { "id": "s08", "ja": "でも北海道は、24.1パーセントなのだ",
+      "tsukkomi": "寒いのに？",
+      "visual": {"type": "number", "value": "24.1", "unit": "%", "label": "北海道 夏", "side": "b",
+                 "source": "プラネット Vol.151 夏に毎回湯船につかる割合"}, "hold": 0.5 },
+
+    { "id": "s09", "ja": "その北海道も、冬は55.2パーセントに戻る",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "プラネット Vol.151 北海道 毎回湯船につかる割合",
+                 "points": [{"label": "夏", "value": 24.1},
+                            {"label": "秋", "value": 46.6},
+                            {"label": "冬", "value": 55.2}]}, "hold": 0.45 },
+
+    { "id": "s10", "ja": "そもそも、なぜ湯船に入るのか",
+      "visual": {"type": "choice", "a_label": "清潔", "b_label": "リラックス", "center": "理由"}, "hold": 0.35 },
+
+    { "id": "s11", "ja": "一番多い理由は、体を清潔に保つため",
+      "visual": {"type": "number", "value": "75.5", "unit": "%", "label": "入浴する理由 1位", "side": "a",
+                 "source": "プラネット Vol.151 体を清潔に保つため 複数回答"}, "hold": 0.45 },
+
+    { "id": "s12", "ja": "そして湯船の中では、ぼーっとしているのだ",
+      "tsukkomi": "わかる",
+      "visual": {"type": "number", "value": "38.2", "unit": "%", "label": "入浴中 ぼーっとする", "side": "b",
+                 "source": "プラネット Vol.151 入浴中にしていること 複数回答"}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたは夏も湯船に入る？",
+      "visual": {"type": "cta", "a_label": "夏も湯船", "b_label": "夏はシャワー"}, "hold": 1.0 }
+  ]
+}
