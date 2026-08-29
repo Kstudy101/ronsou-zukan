@@ -1,0 +1,117 @@
+{
+  "id": "ep18_baeru",
+  "series": "ニッポン論争図鑑",
+  "episode": 18,
+  "topic_ja": "「映える」は使うか",
+  "source": "文化庁「国語に関する世論調査」令和6年度 n=3,498",
+
+  "expected_comments": [
+    "映えるは普通に使うけどエモいは無理",
+    "四国が1位なの意外",
+    "70代が気になるのはよく分かる"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "映える", "pronunciation": "バエル", "accent_type": 0, "priority": 10},
+    {"surface": "崖", "pronunciation": "ガケ", "accent_type": 0},
+    {"surface": "四国", "pronunciation": "シコク", "accent_type": 0}
+  ],
+
+  "youtube": {
+    "title": "【真っ二つ】文化庁の調査で「映える」は使う50.4％・使わない48.1％",
+    "description": "文化庁が3,498人に聞いた令和6年度「国語に関する世論調査」。「映（ば）える」を使うことがある人は50.4％、使うことはない人は48.1％。国民がちょうど半分に割れました。\n\nただし年代別に見ると、割れてはいません。20代83.8％から70歳以上22.3％まで、きれいな一直線です。その差61.5ポイント。地域ブロックで一番使うのは四国の57.9％でした。\n\n「エモい」は使う人が17.8％。20代61.0％に対して30代は34.8％で、ここに26.2ポイントの崖があります。\n\nでは使わない人は気にしているのか。全体では「気にならない」56.7％が多数派ですが、70歳以上では57.8％が「気になる」と答えました。\n\nあなたは「映える」、使いますか。\n\n出典：文化庁「国語に関する世論調査」令和6年度（令和7年1月14日～3月4日 郵送法 全国16歳以上 有効回答3,498人）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#映える #エモい #文化庁 #国語 #世代 #雑学 #論争図鑑",
+    "tags": ["映える", "エモい", "文化庁", "国語に関する世論調査", "若者言葉", "世代", "日本語", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic",
+    "headline": "国民が真っ二つ", "sub": "文化庁 令和6年度 n=3,498「映える」を使うか",
+    "a_label": "使う", "a_value": 50.4, "b_label": "使わない", "b_value": 48.1
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "「映える」って、使う？",
+      "visual": {"type": "choice", "a_label": "使う", "b_label": "使わない", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s02", "ja": "国が3498人に聞いたら、真っ二つだったのだ",
+      "visual": {"type": "versus", "a_label": "使う", "a_value": 50.4,
+                 "b_label": "使わない", "b_value": 48.1, "unit": "%", "decimals": 1,
+                 "source": "文化庁 国語に関する世論調査 令和6年度 n=3,498"}, "hold": 0.5 },
+
+    { "id": "s03", "ja": "でも年代で見ると、割れてはいないのだ",
+      "tsukkomi": "一直線",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "文化庁 令和6年度 「映える」を使うことがある 年齢別",
+                 "points": [{"label": "20代", "value": 83.8},
+                            {"label": "30代", "value": 72.0},
+                            {"label": "40代", "value": 64.6},
+                            {"label": "50代", "value": 56.7},
+                            {"label": "60代", "value": 39.6},
+                            {"label": "70代〜", "value": 22.3}]}, "hold": 0.55 },
+
+    { "id": "s04", "ja": "20代と70歳以上で、61.5ポイント違うのだ",
+      "visual": {"type": "number", "value": "61.5", "unit": "ポイント", "label": "20代と70歳以上の差", "side": "a",
+                 "source": "文化庁 令和6年度 より算出"}, "hold": 0.45 },
+
+    { "id": "s05", "ja": "一番使うのは、四国なのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "文化庁 令和6年度 「映える」を使うことがある 地域ブロック上位3",
+                 "rows": [{"label": "四国", "value": 57.9},
+                          {"label": "近畿", "value": 54.5},
+                          {"label": "関東", "value": 53.2}]}, "hold": 0.45 },
+
+    { "id": "s06", "ja": "じゃあ「エモい」はどうなのだ",
+      "visual": {"type": "choice", "a_label": "使う", "b_label": "使わない", "center": "エモい"}, "hold": 0.35 },
+
+    { "id": "s07", "ja": "使う人は、17.8パーセントしかいないのだ",
+      "visual": {"type": "versus", "a_label": "使う", "a_value": 17.8,
+                 "b_label": "使わない", "b_value": 80.6, "unit": "%", "decimals": 1,
+                 "source": "文化庁 令和6年度 「エモい」を使うことがある n=3,498"}, "hold": 0.45 },
+
+    { "id": "s08", "ja": "20代と30代の間に、崖があるのだ",
+      "tsukkomi": "崖？",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "文化庁 令和6年度 「エモい」を使うことがある 年齢別",
+                 "points": [{"label": "20代", "value": 61.0},
+                            {"label": "30代", "value": 34.8},
+                            {"label": "40代", "value": 19.7},
+                            {"label": "50代", "value": 12.0},
+                            {"label": "60代", "value": 5.9},
+                            {"label": "70代〜", "value": 2.1}]}, "hold": 0.55 },
+
+    { "id": "s09", "ja": "その差、26.2ポイント",
+      "visual": {"type": "number", "value": "26.2", "unit": "ポイント", "label": "20代と30代の差", "side": "b",
+                 "source": "文化庁 令和6年度 より算出"}, "hold": 0.4 },
+
+    { "id": "s10", "ja": "じゃあ使わない人は、気になっているのか",
+      "visual": {"type": "choice", "a_label": "気になる", "b_label": "ならない", "center": "エモい"}, "hold": 0.4 },
+
+    { "id": "s11", "ja": "全体では、気にならないが多数派なのだ",
+      "visual": {"type": "versus", "a_label": "気になる", "a_value": 41.7,
+                 "b_label": "気にならない", "b_value": 56.7, "unit": "%", "decimals": 1,
+                 "source": "文化庁 令和6年度 「エモい」が気になるか n=3,498"}, "hold": 0.5 },
+
+    { "id": "s12", "ja": "でも70歳以上は、57.8パーセントが気になるのだ",
+      "tsukkomi": "やっぱり",
+      "visual": {"type": "number", "value": "57.8", "unit": "%", "label": "70歳以上 「エモい」が気になる", "side": "b",
+                 "source": "文化庁 令和6年度 「エモい」が気になるか 70歳以上"}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたは「映える」、使う？",
+      "visual": {"type": "cta", "a_label": "使う", "b_label": "使わない"}, "hold": 1.0 }
+  ]
+}
