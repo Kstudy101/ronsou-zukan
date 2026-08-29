@@ -1,0 +1,122 @@
+{
+  "id": "ep22_bounenkai",
+  "series": "ニッポン論争図鑑",
+  "episode": 22,
+  "topic_ja": "忘年会に行きたいか",
+  "source": "Job総研「2025年 忘年会意識調査」2025年10〜11月 n=421",
+
+  "expected_comments": [
+    "若手が嫌がってると思ってた",
+    "プライベート優先で何が悪い",
+    "無礼講なんて言われても困る"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "忘年会", "pronunciation": "ボウネンカイ", "accent_type": 0, "priority": 10},
+    {"surface": "無礼講", "pronunciation": "ブレイコウ", "accent_type": 0, "priority": 10},
+    {"surface": "出世", "pronunciation": "シュッセ", "accent_type": 0}
+  ],
+
+  "youtube": {
+    "title": "【通説と逆】忘年会に「参加したい」20代71.0％、50代48.3％",
+    "description": "Job総研「2025年 忘年会意識調査」（2025年10月29日～11月4日、就業中のJobQ Town登録者20～50代、有効回答421人）。\n\n「参加したい派」は全体で60.1％。ところが年代別に見ると、20代71.0％、30代57.8％、40代55.1％、50代48.3％と、若い方が行きたがっています。差は22.7ポイント。「最近の若者は飲み会を嫌う」という通説と逆でした。\n\n参加したい理由の1位は「メンバーとの関係構築」47.0％。参加したくない理由の1位は「プライベートを優先したい」56.5％です。\n\n開催率も戻りました。2019年46.1％→2021年16.2％→2023年41.3％→2025年69.1％。コロナ前を23.0ポイント上回っています。\n\nそして「無礼講」と言われたとき、37.3％は「リラックスの指示」と受け取っていました。\n\nあなたは忘年会、行きたいですか。\n\n出典：Job総研（パーソルキャリア）「2025年 忘年会意識調査」\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#忘年会 #飲み会 #職場 #世代 #Z世代 #雑学 #論争図鑑",
+    "tags": ["忘年会", "飲み会", "職場", "世代", "Z世代", "20代", "50代", "無礼講", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta", "separator": "vs",
+    "headline": "嫌がってるのは50代", "sub": "忘年会に「参加したい」人",
+    "before_label": "20代", "before": "71.0%",
+    "after_label": "50代", "after": "48.3%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "忘年会、行きたい？",
+      "visual": {"type": "choice", "a_label": "行きたい", "b_label": "行きたくない", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s02", "ja": "参加したい派は、60.1パーセントなのだ",
+      "visual": {"type": "versus", "a_label": "参加したい", "a_value": 60.1,
+                 "b_label": "そうでない", "b_value": 39.9, "unit": "%", "decimals": 1,
+                 "source": "Job総研 2025年 忘年会意識調査 n=421"}, "hold": 0.5 },
+
+    { "id": "s03", "ja": "でも年代で見ると、若い方が行きたがるのだ",
+      "tsukkomi": "逆だ",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "Job総研 2025年 忘年会意識調査 参加したい派 年代別 n=421",
+                 "points": [{"label": "20代", "value": 71.0},
+                            {"label": "30代", "value": 57.8},
+                            {"label": "40代", "value": 55.1},
+                            {"label": "50代", "value": 48.3}]}, "hold": 0.55 },
+
+    { "id": "s04", "ja": "20代と50代で、22.7ポイント違うのだ",
+      "visual": {"type": "number", "value": "22.7", "unit": "ポイント", "label": "20代と50代の差", "side": "a",
+                 "source": "Job総研 2025年 忘年会意識調査 より算出"}, "hold": 0.45 },
+
+    { "id": "s05", "ja": "行きたい人は、何を求めているのか",
+      "visual": {"type": "choice", "a_label": "関係づくり", "b_label": "本音の話", "center": "理由"}, "hold": 0.4 },
+
+    { "id": "s06", "ja": "1位は、メンバーとの関係構築なのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "Job総研 2025年 参加したい理由 n=253 複数回答",
+                 "rows": [{"label": "関係構築", "value": 47.0},
+                          {"label": "仕事以外の話", "value": 33.6},
+                          {"label": "飲みの席の話", "value": 33.6}]}, "hold": 0.5 },
+
+    { "id": "s07", "ja": "行きたくない1位は、プライベート優先なのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "Job総研 2025年 参加したくない理由 n=168 複数回答",
+                 "rows": [{"label": "プライベート優先", "value": 56.5},
+                          {"label": "ノリについていけない", "value": 38.7},
+                          {"label": "上下関係が面倒", "value": 38.1}]}, "hold": 0.55 },
+
+    { "id": "s08", "ja": "開催率は、コロナ前を超えたのだ",
+      "tsukkomi": "復活？",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "Job総研 忘年会の開催率 各年調査",
+                 "points": [{"label": "2019", "value": 46.1},
+                            {"label": "2021", "value": 16.2},
+                            {"label": "2022", "value": 24.2},
+                            {"label": "2023", "value": 41.3},
+                            {"label": "2024", "value": 49.4},
+                            {"label": "2025", "value": 69.1}]}, "hold": 0.55 },
+
+    { "id": "s09", "ja": "2019年より、23ポイント多いのだ",
+      "visual": {"type": "number", "value": "23.0", "unit": "ポイント", "label": "2019年からの増加", "side": "a",
+                 "source": "Job総研 忘年会の開催率 より算出"}, "hold": 0.45 },
+
+    { "id": "s10", "ja": "そもそも必要かどうかも、割れるのだ",
+      "visual": {"type": "versus", "a_label": "必要", "a_value": 54.0,
+                 "b_label": "そうでない", "b_value": 46.0, "unit": "%", "decimals": 1,
+                 "source": "Job総研 2025年 職場の忘年会文化は必要か n=421"}, "hold": 0.5 },
+
+    { "id": "s11", "ja": "出世のチャンスだと思う人も、60.5パーセントいるのだ",
+      "visual": {"type": "number", "value": "60.5", "unit": "%", "label": "忘年会は出世のチャンス", "side": "b",
+                 "source": "Job総研 2025年 忘年会意識調査 n=421"}, "hold": 0.5 },
+
+    { "id": "s12", "ja": "無礼講と言われても、指示に聞こえるのだ",
+      "tsukkomi": "だよね",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "Job総研 2025年 「無礼講」の飲み会の印象 上位3",
+                 "rows": [{"label": "リラックスの指示", "value": 37.3},
+                          {"label": "場の空気への配慮", "value": 29.2},
+                          {"label": "上下関係の文化", "value": 26.6}]}, "hold": 0.55 },
+
+    { "id": "s13", "ja": "あなたは忘年会、行きたい？",
+      "visual": {"type": "cta", "a_label": "行きたい", "b_label": "行きたくない"}, "hold": 1.0 }
+  ]
+}
