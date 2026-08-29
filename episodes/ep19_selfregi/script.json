@@ -1,0 +1,114 @@
+{
+  "id": "ep19_selfregi",
+  "series": "ニッポン論争図鑑",
+  "episode": 19,
+  "topic_ja": "セルフレジか有人レジか",
+  "source": "StorePro「有人レジとセルフレジの心理・行動」調査 2025年12月 n=1,008",
+
+  "expected_comments": [
+    "結局は有人レジの方が早い",
+    "エラーで店員を呼ぶなら最初から有人でいい",
+    "セミセルフが一番いいと思う"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "有人", "pronunciation": "ユウジン", "accent_type": 0, "priority": 10},
+    {"surface": "読み取り", "pronunciation": "ヨミトリ", "accent_type": 0},
+    {"surface": "店員", "pronunciation": "テンイン", "accent_type": 0}
+  ],
+
+  "youtube": {
+    "title": "【セルフレジを使う人に聞いた】それでも37.4％が「有人レジ派」",
+    "description": "StoreProが2025年12月に1,008人に聞いた調査です。よく使うのはセルフレジ47.4％、有人レジ37.4％、どちらも同じくらい15.2％でした。\n\nただしこの調査、対象は「週1回以上スーパー・コンビニを利用し、かつセルフレジを利用する20～60代」です。セルフレジを使う人だけに聞いて、それでも37.4％が有人レジ派でした。\n\n評価はきれいに裏返っています。タイムロスが少ないのはセルフレジ55.7％、ミスが起きにくいのは有人レジ42.0％。ストレスの中身も逆で、セルフは「読み取りエラー」39.5％、有人は「待ち時間が長い」47.3％が1位です。\n\nだから46.5％は商品によって使い分けます。人に見られたくない商品のときにセルフレジを選ぶ人は39.0％。そして理想のレジ1位は、セミセルフレジ37.1％でした。\n\nあなたはどっち派ですか。\n\n出典：StorePro（株式会社Textrade）「有人レジとセルフレジの心理・行動」に関する調査（2025年12月8日～9日 PRIZMAによるインターネット調査 n=1,008）\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#セルフレジ #有人レジ #スーパー #コンビニ #買い物 #雑学 #論争図鑑",
+    "tags": ["セルフレジ", "有人レジ", "セミセルフレジ", "スーパー", "コンビニ", "買い物", "レジ", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta", "separator": "vs",
+    "headline": "なのに有人レジ派", "sub": "セルフレジを使う1,008人に聞いた",
+    "before_label": "セルフ派", "before": "47.4%",
+    "after_label": "有人派", "after": "37.4%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "レジ、どっちを選ぶ？",
+      "visual": {"type": "choice", "a_label": "セルフ", "b_label": "有人", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s02", "ja": "一番多いのは、セルフレジ派の47.4パーセント",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "StorePro 2025年12月 n=1,008 最もよく利用するレジ",
+                 "rows": [{"label": "セルフレジ", "value": 47.4},
+                          {"label": "有人レジ", "value": 37.4},
+                          {"label": "どちらも同じ", "value": 15.2}]}, "hold": 0.5 },
+
+    { "id": "s03", "ja": "この調査、セルフを使う人にだけ聞いたのだ",
+      "tsukkomi": "え？",
+      "visual": {"type": "number", "value": "1008", "unit": "人", "label": "対象はセルフレジ利用者", "side": "b",
+                 "source": "StorePro 2025年12月 対象はセルフレジ利用者 n=1,008"}, "hold": 0.5 },
+
+    { "id": "s04", "ja": "それでも37.4パーセントが、有人レジ派なのだ",
+      "visual": {"type": "number", "value": "37.4", "unit": "%", "label": "セルフを使う人のうち 有人レジ派", "side": "b",
+                 "source": "StorePro 2025年12月 n=1,008"}, "hold": 0.5 },
+
+    { "id": "s05", "ja": "速さか、正確さか",
+      "visual": {"type": "choice", "a_label": "速さ", "b_label": "正確さ", "center": "?"}, "hold": 0.35 },
+
+    { "id": "s06", "ja": "速いのはセルフ。55.7パーセントなのだ",
+      "visual": {"type": "number", "value": "55.7", "unit": "%", "label": "タイムロスが少ないのはセルフ", "side": "a",
+                 "source": "StorePro 2025年12月 タイムロスが少ないレジ"}, "hold": 0.45 },
+
+    { "id": "s07", "ja": "でもミスが少ないのは有人。42パーセント",
+      "tsukkomi": "裏返し",
+      "visual": {"type": "number", "value": "42.0", "unit": "%", "label": "ミスが起きにくいのは有人", "side": "b",
+                 "source": "StorePro 2025年12月 ミスが起きにくいレジ"}, "hold": 0.5 },
+
+    { "id": "s08", "ja": "セルフの1位は、読み取りエラーなのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "StorePro 2025年12月 セルフレジ利用時に困った経験 上位3",
+                 "rows": [{"label": "読み取りエラー", "value": 39.5},
+                          {"label": "操作がわかりにくい", "value": 23.7},
+                          {"label": "店員を呼びにくい", "value": 16.7}]}, "hold": 0.5 },
+
+    { "id": "s09", "ja": "有人の1位は、待ち時間なのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "StorePro 2025年12月 有人レジでストレスを感じる点 上位3",
+                 "rows": [{"label": "待ち時間が長い", "value": 47.3},
+                          {"label": "店員の対応", "value": 21.1},
+                          {"label": "急かされる", "value": 13.0}]}, "hold": 0.5 },
+
+    { "id": "s10", "ja": "だから46.5パーセントは、使い分けているのだ",
+      "visual": {"type": "versus", "a_label": "使い分ける", "a_value": 46.5,
+                 "b_label": "使い分けない", "b_value": 53.5, "unit": "%", "decimals": 1,
+                 "source": "StorePro 2025年12月 商品によってレジを使い分けるか"}, "hold": 0.45 },
+
+    { "id": "s11", "ja": "見られたくない商品のときは、セルフなのだ",
+      "tsukkomi": "わかる",
+      "visual": {"type": "number", "value": "39.0", "unit": "%", "label": "見られたくない商品はセルフ", "side": "a",
+                 "source": "StorePro 2025年12月 人に見られたくない商品購入時に選ぶレジ"}, "hold": 0.5 },
+
+    { "id": "s12", "ja": "そして理想の1位は、セミセルフレジ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "StorePro 2025年12月 最も理想的なレジ 上位3",
+                 "rows": [{"label": "セミセルフ", "value": 37.1},
+                          {"label": "フルセルフ", "value": 22.1},
+                          {"label": "有人レジ", "value": 12.5}]}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたはどっち派？",
+      "visual": {"type": "cta", "a_label": "セルフレジ派", "b_label": "有人レジ派"}, "hold": 1.0 }
+  ]
+}
