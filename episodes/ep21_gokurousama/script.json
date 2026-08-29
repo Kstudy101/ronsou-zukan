@@ -1,0 +1,117 @@
+{
+  "id": "ep21_gokurousama",
+  "series": "ニッポン論争図鑑",
+  "episode": 21,
+  "topic_ja": "配達の人に「ご苦労様」はアリか",
+  "source": "文化庁「国語に関する世論調査」令和6年度 n=3,498",
+
+  "expected_comments": [
+    "ご苦労様は目上に使わないと習った",
+    "配達の人にはありがとうしか言わない",
+    "東北が一番多いのは意外"
+  ],
+
+  "voice": {
+    "provider": "voicevox", "character": "ずんだもん", "style": "ノーマル",
+    "speed": 1.08, "intonation": 1.15, "pitch": 0.0
+  },
+
+  "dictionary": [
+    {"surface": "ご苦労様", "pronunciation": "ゴクロウサマ", "accent_type": 0, "priority": 10},
+    {"surface": "お疲れ様", "pronunciation": "オツカレサマ", "accent_type": 0, "priority": 10},
+    {"surface": "配達", "pronunciation": "ハイタツ", "accent_type": 0},
+    {"surface": "四国", "pronunciation": "シコク", "accent_type": 0},
+    {"surface": "上司", "pronunciation": "ジョウシ", "accent_type": 1}
+  ],
+
+  "youtube": {
+    "title": "【文化庁調査】配達の人に「ご苦労様」と言う人は19.7％、70歳以上は31.2％",
+    "description": "文化庁「国語に関する世論調査」令和6年度（有効回答3,498人、2025年9月26日公表）。\n\n注文した品を届けてくれた配達の人に何と言うか。1位は「ありがとう（ございました）」70.0％。次いで「御苦労様（でした）」19.7％、「お疲れ様（でした）」4.5％、「どうも」2.6％でした。\n\n年代できれいに分かれます。「御苦労様」は20代5.4％、30代8.0％、40代13.3％、50代20.7％、60代23.8％、70歳以上31.2％。差は25.8ポイントです。\n\n地域でも割れます。「御苦労様」が最も多いのは東北の31.1％、最も少ないのは四国の9.3％でした。\n\n会社ではどうか。職階が上の人に「御苦労様」と言う人は3.5％しかいませんが、職階が下の人になら14.9％まで上がります。上の人には「お疲れ様」77.1％が標準です。\n\nあなたは配達の人に何と言いますか。\n\n出典：文化庁「国語に関する世論調査」令和6年度\n\n※ナレーションは合成音声（VOICEVOX：ずんだもん）を使用しています。\n\n#ご苦労様 #お疲れ様 #敬語 #文化庁 #マナー #雑学 #論争図鑑",
+    "tags": ["ご苦労様", "お疲れ様", "敬語", "マナー", "文化庁", "国語に関する世論調査", "世代", "雑学", "豆知識", "論争", "日本"],
+    "category_id": "27", "privacy_status": "private", "made_for_kids": false, "language": "ja"
+  },
+
+  "design": {
+    "width": 1080, "height": 1920, "fps": 30,
+    "subtitle_mode": "ja", "subtitle_center_y_pct": 60.0,
+    "ja_font": "C:/Windows/Fonts/NotoSansJP-VF.ttf", "ja_weight": "Black",
+    "main_size": 100, "tsukkomi_size": 50,
+    "main_color": "#FFFFFF", "accent_color": "#FFD24A", "tsukkomi_color": "#7FE3C4",
+    "bgm_style": "bright", "bgm_gain_db": -19.0, "transition": 0.4
+  },
+
+  "thumbnail": {
+    "type": "graphic", "mode": "delta", "separator": "vs",
+    "headline": "6倍ちがう", "sub": "配達の人に「ご苦労様」と言う人",
+    "before_label": "20代", "before": "5.4%",
+    "after_label": "70歳以上", "after": "31.2%"
+  },
+
+  "scenes": [
+    { "id": "s01", "ja": "配達の人に、何て言う？",
+      "visual": {"type": "choice", "a_label": "ありがとう", "b_label": "ご苦労様", "center": "?"}, "hold": 0.4 },
+
+    { "id": "s02", "ja": "7割は、ありがとうなのだ",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "文化庁 国語に関する世論調査 令和6年度 n=3,498",
+                 "rows": [{"label": "ありがとう", "value": 70.0},
+                          {"label": "ご苦労様", "value": 19.7},
+                          {"label": "お疲れ様", "value": 4.5},
+                          {"label": "どうも", "value": 2.6}]}, "hold": 0.5 },
+
+    { "id": "s03", "ja": "でも5人に1人は、ご苦労様なのだ",
+      "visual": {"type": "number", "value": "19.7", "unit": "%", "label": "配達の人に「ご苦労様」", "side": "b",
+                 "source": "文化庁 令和6年度 n=3,498"}, "hold": 0.45 },
+
+    { "id": "s04", "ja": "年代で、きれいに分かれるのだ",
+      "tsukkomi": "きれいな坂",
+      "visual": {"type": "trend", "unit": "%",
+                 "source": "文化庁 令和6年度 配達の人に「ご苦労様」 年齢別",
+                 "points": [{"label": "20代", "value": 5.4},
+                            {"label": "30代", "value": 8.0},
+                            {"label": "40代", "value": 13.3},
+                            {"label": "50代", "value": 20.7},
+                            {"label": "60代", "value": 23.8},
+                            {"label": "70代〜", "value": 31.2}]}, "hold": 0.55 },
+
+    { "id": "s05", "ja": "20代と70歳以上で、25.8ポイント違うのだ",
+      "visual": {"type": "number", "value": "25.8", "unit": "ポイント", "label": "20代と70歳以上の差", "side": "a",
+                 "source": "文化庁 令和6年度 より算出"}, "hold": 0.45 },
+
+    { "id": "s06", "ja": "地域でも割れるのだ",
+      "visual": {"type": "choice", "a_label": "東北", "b_label": "四国", "center": "ご苦労様"}, "hold": 0.35 },
+
+    { "id": "s07", "ja": "一番多いのは、東北の31.1パーセント",
+      "visual": {"type": "ranking", "unit": "%", "focus": 1,
+                 "source": "文化庁 令和6年度 「ご苦労様」 地域ブロック上位3",
+                 "rows": [{"label": "東北", "value": 31.1},
+                          {"label": "中部", "value": 25.3},
+                          {"label": "北海道", "value": 24.4}]}, "hold": 0.5 },
+
+    { "id": "s08", "ja": "一番少ないのは、四国の9.3パーセントなのだ",
+      "visual": {"type": "number", "value": "9.3", "unit": "%", "label": "四国 「ご苦労様」 全国最少", "side": "b",
+                 "source": "文化庁 令和6年度 地域ブロック別 最少"}, "hold": 0.5 },
+
+    { "id": "s09", "ja": "じゃあ会社では、どうなのか",
+      "visual": {"type": "choice", "a_label": "上司に", "b_label": "部下に", "center": "ご苦労様"}, "hold": 0.4 },
+
+    { "id": "s10", "ja": "上司に使う人は、3.5パーセントしかいないのだ",
+      "visual": {"type": "number", "value": "3.5", "unit": "%", "label": "職階が上の人に「ご苦労様」", "side": "a",
+                 "source": "文化庁 令和6年度 会社で仕事後に掛ける言葉"}, "hold": 0.5 },
+
+    { "id": "s11", "ja": "でも部下になら、14.9パーセントまで上がるのだ",
+      "tsukkomi": "4倍",
+      "visual": {"type": "ranking", "unit": "%", "focus": 2,
+                 "source": "文化庁 令和6年度 職階が下の人に掛ける言葉 上位3",
+                 "rows": [{"label": "お疲れ様", "value": 71.2},
+                          {"label": "ご苦労様", "value": 14.9},
+                          {"label": "ありがとう", "value": 10.8}]}, "hold": 0.55 },
+
+    { "id": "s12", "ja": "上司には、お疲れ様が77.1パーセントで標準なのだ",
+      "visual": {"type": "number", "value": "77.1", "unit": "%", "label": "職階が上の人に「お疲れ様」", "side": "a",
+                 "source": "文化庁 令和6年度 会社で仕事後に掛ける言葉"}, "hold": 0.5 },
+
+    { "id": "s13", "ja": "あなたは配達の人に、何て言う？",
+      "visual": {"type": "cta", "a_label": "ありがとう", "b_label": "ご苦労様"}, "hold": 1.0 }
+  ]
+}
