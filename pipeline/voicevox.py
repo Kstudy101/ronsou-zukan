@@ -93,6 +93,10 @@ def register_words(entries: list[dict]) -> None:
 
     항목: {"surface": "真っ二つ", "pronunciation": "マップタツ", "accent_type": 4}
     발음은 전각 가타카나여야 한다.
+
+    `priority`(0~10, 기본 5)를 올려야 이기는 말이 있다. 엔진 기본 사전에 이미
+    다른 읽는 법으로 들어 있는 활용어가 그렇다. 「映える」는 기본 우선도로
+    등록해도 ハエル 로 읽히고, 10 으로 올려야 バエル 가 된다.
     """
     for entry in entries:
         params = {
@@ -102,6 +106,8 @@ def register_words(entries: list[dict]) -> None:
         }
         if "word_type" in entry:
             params["word_type"] = entry["word_type"]
+        if "priority" in entry:
+            params["priority"] = entry["priority"]
         try:
             _request("POST", "/user_dict_word", params=params, timeout=30)
             print(f"  사전 등록: {entry['surface']} → {entry['pronunciation']}")
